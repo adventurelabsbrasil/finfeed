@@ -14,11 +14,22 @@ Colunas nos CSVs: Data (DD/MM/YYYY), Valor (+ entrada, - saída), Identificador,
 import csv
 import json
 import re
+import sys
 from pathlib import Path
 from collections import defaultdict
 
+SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+from categories import BLACKLIST
+
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
 OUT_JSON = ASSETS / "consolidated_conta_corrente_2025.json"
+
+
+def is_blacklisted_conta(desc: str) -> bool:
+    d = (desc or "").lower()
+    return any(b in d for b in BLACKLIST)
 
 
 def parse_amount(s: str) -> float:
@@ -83,56 +94,57 @@ def extract_entity(desc: str) -> str:
     return d[:80] if len(d) > 80 else d
 
 
-def categorize_conta(desc: str, amount: float) -> str:
-    """Atribui categoria por palavras-chave na descrição (entrada ou saída)."""
+def categorize_conta(desc: str, amount: float, entity: str = "") -> str:
+    """Atribui categoria por entidade/descrição; só categorias da lista mestra (sem Transferências/PIX)."""
     d = (desc or "").lower()
+    ent = (entity or "").lower()
 
-    # Entradas
+    # Entradas — categorias de receita
     if amount > 0:
-        if "transferência recebida" in d or "transferência recebida" in d:
+        if "transferência recebida" in d or "transferência recebida pelo pix" in d:
             if "rodrigo ribas" in d or "nu pagamentos" in d:
                 return "Salário / Transferência"
-            return "Transferências recebidas"
+            return "Recebimento de Clientes"  # PIX de terceiros
         if "resgate rdb" in d:
             return "Investimentos (resgate)"
-        if "transferência recebida pelo pix" in d:
-            return "Transferências recebidas"
         return "Outras entradas"
 
-    # Saídas
+    # Saídas — categorias da lista mestra
     if "pagamento de fatura" in d:
         return "Pagamento cartão"
-    if "receita federal" in d or "ipva" in d or "sefaz" in d:
-        return "Impostos"
-    if "telefonica" in d or "tel3" in d or "tel3 telecom" in d:
-        return "Serviços (telefone)"
+    if "receita federal" in d or "ipva" in d or "sefaz" in d or "receita federal" in ent:
+        return "Impostos e taxas"
+    if "telefonica" in d or "tel3" in d or "tel3 telecom" in ent:
+        return "Comunicação"
     if "cia estadual de distribui" in d or "cia riograndense de saneamento" in d:
-        return "Serviços (luz/água)"
+        return "Saneamento básico"
     if "aplicação rdb" in d or "aplicacao rdb" in d:
         return "Investimentos"
     if "pagamento de boleto" in d:
-        return "Boletos / outros"
+        if "consorcio" in d or "consórcio" in d or "consorcio" in ent:
+            return "Financiamento e consórcio"
+        return "Boletos e outros"
     if "compra no débito" in d or "compra no debito" in d:
-        # Mesma lógica do cartão para estabelecimento
-        sub = d
-        if "posto" in sub or "gasolina" in sub:
+        if "posto" in d or "gasolina" in d:
             return "Combustível"
-        if "supermerc" in sub or "mercado" in sub or "hortifruti" in sub:
-            return "Alimentação / Supermercado"
-        if "restaurante" in sub or "lanch" in sub or "padaria" in sub:
-            return "Alimentação / Restaurante"
-        return "Compras débito"
-    # PIX para pessoas (nomes com •••) ou entidades
-    if "transferência enviada pelo pix" in d or "transferência enviada pelo pix" in d:
+        if "supermerc" in d or "mercado" in d or "hortifruti" in d:
+            return "Mercado"
+        if "restaurante" in d or "lanch" in d or "padaria" in d:
+            return "Restaurante" if "restaurante" in d or "lanch" in d else "Lanche padaria e outros alimentos"
+        return "Outros"
+    # PIX enviado — inferir por entidade
+    if "transferência enviada pelo pix" in d:
         if "•••" in (desc or ""):
-            return "Transferências PIX (pessoal)"
-        if "mercado" in d or "mercadopago" in d or "pagseguro" in d:
-            return "Compras / Pagamentos online"
+            return "Presentes"  # PIX pessoal; usuário pode editar para Despesas esporádicas etc.
+        if "mercadopago" in d or "pagseguro" in d:
+            return "Outros"  # pagamentos online; usuário pode categorizar
         if "consorcio" in d or "consórcio" in d:
-            return "Consórcio"
-        if "nubank" in d and "conta" in d:
-            return "Transferências PIX (pessoal)"
-        return "Transferências PIX / Serviços"
+            return "Financiamento e consórcio"
+        if "nubank" in d:
+            return "Outros"
+        if "edison" in d or "fornecedor" in ent or "kirsten" in d:
+            return "Pagamento de Fornecedores"
+        return "Outros"
     return "Outros"
 
 
@@ -148,8 +160,10 @@ def load_all_conta_corrente() -> list[dict]:
                     continue
                 valor = parse_amount(row.get("Valor") or "0")
                 desc = (row.get("Descrição") or row.get("Descricao") or "").strip()
+                if is_blacklisted_conta(desc):
+                    continue
                 entity = extract_entity(desc)
-                category = categorize_conta(desc, valor)
+                category = categorize_conta(desc, valor, entity)
                 tipo = "entrada" if valor >= 0 else "saida"
                 rows.append({
                     "date": date_iso,

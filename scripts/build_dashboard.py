@@ -11,9 +11,15 @@ Gera: index.html na raiz do projeto
 
 import csv
 import json
+import sys
 from pathlib import Path
 from collections import defaultdict
 from typing import Optional
+
+SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+from categories import BLACKLIST, MASTER_CATEGORIES, is_blacklisted as _is_blacklisted_cat
 
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
 CSV_PATH = ASSETS / "consolidated_12m_expenses.csv"
@@ -22,20 +28,6 @@ OUT_HTML = Path(__file__).resolve().parent.parent / "index.html"
 
 # Teto orçamentário mensal (despesas básicas no cartão, exc. lazer, financiamento, limpeza, investimentos, educação, consórcio)
 BUDGET_MONTHLY = 3125.0
-
-# Despesas a ocultar (match parcial, case-insensitive)
-BLACKLIST = [
-    "xgrow",
-    "saldo em rotativo",
-    "saldo em atraso",
-    "juros de dívida",
-    "juros de divida",
-    "multa de atraso",
-    "juros do rotativo",
-    "juros de rotativo",
-    "iof rotativo",
-    "iof de atraso",
-]
 
 
 def parse_amount(s: str) -> float:
@@ -47,33 +39,34 @@ def parse_amount(s: str) -> float:
 
 
 def is_blacklisted(title: str) -> bool:
-    t = (title or "").lower()
-    return any(b in t for b in BLACKLIST)
+    return _is_blacklisted_cat(title)
 
 
 def categorize(title: str) -> str:
-    """Atribui categoria por palavras-chave no título (case-insensitive)."""
+    """Atribui categoria por palavras-chave no título; categorias da lista mestra."""
     t = (title or "").lower()
     if any(k in t for k in ["supermerc", "mercado", "hortifruti", "mercearia", "atacad", "fruteira", "carrefour"]):
-        return "Alimentação / Supermercado"
+        return "Mercado"
     if any(k in t for k in ["posto", "gasbom", "gasolina", "abastece"]):
         return "Combustível"
-    if any(k in t for k in ["uber", "via sul", "concessionaria", "concessionária", "pedágio"]):
+    if any(k in t for k in ["uber", "via sul", "concessionaria", "concessionária"]):
         return "Transporte"
+    if any(k in t for k in ["pedágio", "estacionamento"]):
+        return "Pedágio"
     if any(k in t for k in ["academia", "prime fit"]):
-        return "Saúde / Academia"
+        return "Academia"
     if any(k in t for k in ["farmacia", "farmácia", "panvel", "sao joao", "são joão"]):
-        return "Saúde / Farmácia"
+        return "Saúde"
     if any(k in t for k in ["ricky", "xis", "lanches", "restaurante", "pizzaria", "buffon", "padaria", "lanchonete", "hamburguer", "minhocaburger", "rancho", "a lenha", "cia do sabor", "cremolatto", "delivery"]):
-        return "Alimentação / Restaurante"
+        return "Restaurante" if any(x in t for x in ["restaurante", "pizzaria", "buffon", "hamburguer", "rancho", "cia do sabor"]) else "Lanche padaria e outros alimentos"
     if any(k in t for k in ["google", "youtube", "netflix", "assinatura", "juliocesar", "gemeascel", "conta vivo", "contavivo"]):
-        return "Assinaturas / Serviços"
+        return "Assinaturas"
     if any(k in t for k in ["barbeiro", "xbeleza", "beleza", "barbearia"]):
-        return "Beleza / Cuidados"
-    if any(k in t for k in ["rede farroupilha", "estacionamento", "estacionamentos"]):
-        return "Estacionamento / Pedágio"
+        return "Vestuário e higiene pessoal"
+    if any(k in t for k in ["rede farroupilha", "estacionamentos"]):
+        return "Pedágio"
     if any(k in t for k in ["bazar", "havan", "lojas americanas", "leroy", "amazon"]):
-        return "Compras / Variedades"
+        return "Loja e Bazar"
     return "Outros"
 
 
@@ -166,8 +159,9 @@ def load_conta_corrente() -> Optional[dict]:
         return json.load(f)
 
 
-def build_conta_payload(conta_data: dict) -> dict:
-    """Monta payload para a aba Conta Corrente: by_month, by_entity_abc, by_category."""
+def build_conta_payload(conta_data: dict, total_cartao: float = 0) -> dict:
+    """Monta payload para a aba Conta Corrente: by_month, by_entity_abc, by_category.
+    total_cartao: total contabilizado do cartão; usado para categoria 'Pagamento cartão' alinhar ao cartão."""
     transactions = conta_data.get("transactions", [])
     meta = conta_data.get("meta", {})
     saidas = [t for t in transactions if t.get("amount", 0) < 0]
@@ -183,11 +177,13 @@ def build_conta_payload(conta_data: dict) -> dict:
     total_saidas = sum(x["total"] for x in by_entity)
     by_entity_abc = build_abc(by_entity, total_saidas) if total_saidas > 0 else []
 
-    # Por categoria (saídas)
+    # Por categoria (saídas); "Pagamento cartão" = total_cartao para refletir o mesmo valor do cartão
     by_cat_sum = defaultdict(float)
     for t in saidas:
         cat = (t.get("category") or "Outros").strip()
         by_cat_sum[cat] += abs(t["amount"])
+    if total_cartao and "Pagamento cartão" in by_cat_sum:
+        by_cat_sum["Pagamento cartão"] = round(total_cartao, 2)
     by_category = [
         {"category": k, "total": round(v, 2)}
         for k, v in sorted(by_cat_sum.items(), key=lambda x: -x[1])
@@ -227,6 +223,7 @@ def build_conta_payload(conta_data: dict) -> dict:
         "by_entity": by_entity_abc,
         "by_category": by_category,
         "by_month": by_month,
+        "master_categories": MASTER_CATEGORIES,
         "all_categories": all_categories,
     }
 
@@ -292,12 +289,13 @@ def main():
         "by_month": by_month,
         "by_category": by_category,
         "all_categories": all_categories,
+        "master_categories": MASTER_CATEGORIES,
         "months_count": months_with_data,
     }
     data_js = json.dumps(payload, ensure_ascii=False)
 
     conta_raw = load_conta_corrente()
-    payload_conta = build_conta_payload(conta_raw) if conta_raw else None
+    payload_conta = build_conta_payload(conta_raw, total_2025) if conta_raw else None
     data_conta_js = json.dumps(payload_conta, ensure_ascii=False) if payload_conta else "null"
 
     # Consolidado: DRE (receitas - despesas) e DFC (fluxo mensal)
@@ -406,6 +404,20 @@ def main():
     .donut-legend .dot {{ width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }}
     .donut-legend .label {{ flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }}
     .donut-legend .val {{ color: #f85149; font-variant-numeric: tabular-nums; }}
+    .dre-dfc-print {{ background: #fff; color: #24292f; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; border: 1px solid #d0d7de; }}
+    .dre-dfc-print h2 {{ font-size: 1.1rem; color: #24292f; margin: 1rem 0 0.5rem 0; }}
+    .dre-dfc-print h2:first-child {{ margin-top: 0; }}
+    .dre-dfc-print table {{ width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 1rem; }}
+    .dre-dfc-print th, .dre-dfc-print td {{ border: 1px solid #d0d7de; padding: 0.5rem 0.75rem; text-align: left; }}
+    .dre-dfc-print th {{ background: #f6f8fa; font-weight: 600; }}
+    .dre-dfc-print td.amount {{ text-align: right; font-variant-numeric: tabular-nums; }}
+    .dre-dfc-print .total-row {{ font-weight: 600; background: #f6f8fa; }}
+    @media print {{
+      body * {{ visibility: hidden; }}
+      .dre-dfc-print, .dre-dfc-print * {{ visibility: visible; }}
+      .dre-dfc-print {{ position: absolute; left: 0; top: 0; width: 100%; max-width: none; background: #fff; color: #24292f; border: none; padding: 1rem; }}
+      @page {{ size: landscape; margin: 1.5cm; }}
+    }}
   </style>
 </head>
 <body>
@@ -498,8 +510,10 @@ def main():
     <div class="filters">
       <label>Mês:</label>
       <select id="filter-month"><option value="">Todos</option></select>
-      <label>Categoria:</label>
+      <label>Categoria (tabela):</label>
       <select id="filter-category"><option value="">Todas</option></select>
+      <label>Categorias (totais/gráficos):</label>
+      <select id="filter-categories-cartao" multiple title="Segure Ctrl para múltiplas"><option value="">—</option></select>
       <input type="text" id="search" placeholder="Buscar por data, estabelecimento ou valor...">
     </div>
     <div class="table-wrap">
@@ -571,12 +585,13 @@ def main():
       <h2>Tabela de lançamentos (2025)</h2>
       <div class="filters">
         <label>Mês:</label><select id="conta-filter-month"><option value="">Todos</option></select>
-        <label>Categoria:</label><select id="conta-filter-category"><option value="">Todas</option></select>
+        <label>Categoria (tabela):</label><select id="conta-filter-category"><option value="">Todas</option></select>
+        <label>Categorias (totais/gráficos):</label><select id="filter-categories-conta" multiple title="Segure Ctrl para múltiplas"><option value="">—</option></select>
         <input type="text" id="conta-search" placeholder="Buscar por data, entidade ou valor...">
       </div>
       <div class="table-wrap">
         <table id="conta-expenses-table">
-          <thead><tr><th data-sort="date">Data</th><th data-sort="entity">Entidade</th><th>Categoria</th><th data-sort="amount">Valor (R$)</th></tr></thead>
+          <thead><tr><th data-sort="date">Data</th><th data-sort="entity">Entidade</th><th>Categoria</th><th data-sort="amount">Valor (R$)</th><th>Ocultar</th></tr></thead>
           <tbody id="conta-tbody"></tbody>
         </table>
       </div>
@@ -587,6 +602,9 @@ def main():
     <h2 style="font-size:1.1rem; color:#8b949e; margin-bottom:0.5rem;">Consolidado — DRE e DFC 2025</h2>
     <p class="subtitle" style="margin-top:0;">Receitas e despesas (conta corrente) · Fluxo de caixa mensal</p>
     <div class="notice"><strong>DRE pessoal</strong>: Receitas = entradas na conta; Despesas = saídas na conta (inclui pagamento de fatura do cartão). <strong>DFC</strong>: fluxo de caixa por mês (entradas − saídas na conta).</div>
+    <div class="filters">
+      <label>Categorias (filtrar):</label><select id="filter-categories-consolidado" multiple title="Segure Ctrl para múltiplas"><option value="">—</option></select>
+    </div>
     <div class="cards">
       <div class="card"><div class="label">Receitas 2025</div><div class="value" id="dre-receitas" style="color:#238636;">—</div></div>
       <div class="card"><div class="label">Despesas 2025</div><div class="value total" id="dre-despesas">—</div></div>
@@ -601,6 +619,23 @@ def main():
       <h2>Despesas por categoria (conta corrente — saídas)</h2>
       <div class="category-list" id="consolidado-by-category"></div>
     </section>
+    <section>
+      <h2>DRE e DFC para impressão (PDF)</h2>
+      <p style="color:#8b949e; font-size:0.85rem;">Tema claro, tabela em paisagem. Use o botão abaixo e depois &quot;Salvar como PDF&quot; na janela de impressão.</p>
+      <button type="button" id="btn-print-dre-dfc" style="padding:0.5rem 1rem; background:#238636; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:0.9rem;">Imprimir DRE/DFC (PDF)</button>
+      <div class="dre-dfc-print" id="dre-dfc-print">
+        <h2>DRE Pessoal 2025</h2>
+        <table id="dre-print-table">
+          <thead><tr><th>Descrição</th><th class="amount">Valor (R$)</th></tr></thead>
+          <tbody id="dre-print-tbody"></tbody>
+        </table>
+        <h2>DFC — Fluxo de caixa por mês 2025</h2>
+        <table id="dfc-print-table">
+          <thead><tr id="dfc-print-thead-row"></tr></thead>
+          <tbody id="dfc-print-tbody"></tbody>
+        </table>
+      </div>
+    </section>
   </div>
 
   <script>
@@ -608,6 +643,13 @@ def main():
     const PAYLOAD_CONTA = {data_conta_js};
     const PAYLOAD_CONSOLIDADO = {data_consolidado_js};
     var OVERRIDES_KEY = 'finfeed_overrides_2025';
+    var OVERRIDES_CONTA_KEY = 'finfeed_overrides_conta_2025';
+    var overridesConta = {{}};
+    try {{
+      var savedConta = localStorage.getItem(OVERRIDES_CONTA_KEY);
+      if (savedConta) overridesConta = JSON.parse(savedConta);
+    }} catch (e) {{}}
+    function saveOverridesConta() {{ try {{ localStorage.setItem(OVERRIDES_CONTA_KEY, JSON.stringify(overridesConta)); }} catch (e) {{}} }}
 
     function fmtMoney(n) {{
       return 'R$ ' + n.toLocaleString('pt-BR', {{ minimumFractionDigits: 2, maximumFractionDigits: 2 }});
@@ -621,7 +663,7 @@ def main():
 
     var monthNames = {{ '01':'Jan','02':'Fev','03':'Mar','04':'Abr','05':'Mai','06':'Jun','07':'Jul','08':'Ago','09':'Set','10':'Out','11':'Nov','12':'Dez' }};
     var budget = PAYLOAD.budget_monthly || 3125;
-    var allCategories = PAYLOAD.all_categories || [];
+    var allCategories = PAYLOAD.master_categories || PAYLOAD.all_categories || [];
 
     var overrides = {{}};
     try {{
@@ -685,6 +727,7 @@ def main():
 
     function recalc() {{
       var eff = getEffectiveExpenses();
+      if (filterCategoriesCartao.length) eff = eff.filter(function (r) {{ return filterCategoriesCartao.indexOf(r.category) >= 0; }});
       var total = eff.reduce(function (s, r) {{ return s + r.amount; }}, 0);
       var by_month = aggregateByMonth(eff);
       var by_title = aggregateByTitle(eff);
@@ -835,22 +878,54 @@ def main():
       renderTable(data);
     }}
 
+    function getEffectiveContaTransactions() {{
+      if (!PAYLOAD_CONTA || !PAYLOAD_CONTA.transactions) return [];
+      return PAYLOAD_CONTA.transactions.map(function (t, i) {{
+        var o = overridesConta[i];
+        var cat = (o && o.category !== undefined) ? o.category : (t.category || 'Outros');
+        var count = (o && o.count !== undefined) ? o.count : true;
+        return {{ date: t.date, amount: t.amount, entity: t.entity, description: t.description, category: cat, type: t.type, _count: count, _idx: i }};
+      }}).filter(function (t) {{ return t._count; }});
+    }}
+    function getRowCategoryConta(idx) {{
+      var t = PAYLOAD_CONTA.transactions[idx];
+      var o = overridesConta[idx];
+      return (o && o.category !== undefined) ? o.category : (t ? (t.category || 'Outros') : 'Outros');
+    }}
+    function getRowCountConta(idx) {{
+      var o = overridesConta[idx];
+      return (o && o.count !== undefined) ? o.count : true;
+    }}
+
     function renderContaTab() {{
       if (!PAYLOAD_CONTA) {{
         var pane = document.getElementById('tab-conta');
         if (pane) pane.innerHTML = '<p class="notice">Execute <code>python scripts/consolidate_conta_corrente.py</code> e gere o dashboard novamente para ver os dados da conta corrente.</p>';
         return;
       }}
-      var c = PAYLOAD_CONTA;
-      document.getElementById('conta-entradas').textContent = fmtMoney(c.entradas_total || 0);
-      document.getElementById('conta-saidas').textContent = fmtMoney(c.saidas_total || 0);
-      document.getElementById('conta-saldo').textContent = fmtMoney(c.saldo_2025 || 0);
-      document.getElementById('conta-saldo').style.color = (c.saldo_2025 || 0) >= 0 ? '#238636' : '#f85149';
-      document.getElementById('conta-count').textContent = (c.count || 0).toLocaleString('pt-BR');
+      var eff = getEffectiveContaTransactions();
+      if (filterCategoriesConta.length) eff = eff.filter(function (t) {{ return filterCategoriesConta.indexOf(t.category) >= 0; }});
+      var entradas_total = eff.filter(function (t) {{ return t.amount > 0; }}).reduce(function (s, t) {{ return s + t.amount; }}, 0);
+      var saidas_total = eff.filter(function (t) {{ return t.amount < 0; }}).reduce(function (s, t) {{ return s + Math.abs(t.amount); }}, 0);
+      var saldo = Math.round((entradas_total - saidas_total) * 100) / 100;
+      document.getElementById('conta-entradas').textContent = fmtMoney(entradas_total);
+      document.getElementById('conta-saidas').textContent = fmtMoney(saidas_total);
+      document.getElementById('conta-saldo').textContent = fmtMoney(saldo);
+      document.getElementById('conta-saldo').style.color = saldo >= 0 ? '#238636' : '#f85149';
+      document.getElementById('conta-count').textContent = eff.length.toLocaleString('pt-BR');
+
+      var byMonthEnt = {{}}, byMonthSai = {{}};
+      eff.forEach(function (t) {{
+        var m = (t.date || '').slice(0, 7);
+        if (!m) return;
+        if (t.amount > 0) byMonthEnt[m] = (byMonthEnt[m] || 0) + t.amount;
+        else byMonthSai[m] = (byMonthSai[m] || 0) + Math.abs(t.amount);
+      }});
+      var months = Object.keys({{ ...byMonthEnt, ...byMonthSai }}).sort();
+      var byMonth = months.map(function (m) {{ return {{ month: m, entradas: Math.round((byMonthEnt[m] || 0) * 100) / 100, saidas: Math.round((byMonthSai[m] || 0) * 100) / 100, saldo: Math.round(((byMonthEnt[m] || 0) - (byMonthSai[m] || 0)) * 100) / 100 }}; }});
 
       var barsEl = document.getElementById('conta-month-bars');
       barsEl.innerHTML = '';
-      var byMonth = c.by_month || [];
       var maxVal = 1;
       byMonth.forEach(function (m) {{ maxVal = Math.max(maxVal, m.entradas || 0, m.saidas || 0); }});
       var barMaxH = 160;
@@ -864,23 +939,35 @@ def main():
         barsEl.appendChild(col);
       }});
 
+      var saidas = eff.filter(function (t) {{ return t.amount < 0; }});
+      var byEntitySum = {{}};
+      saidas.forEach(function (t) {{ var e = t.entity || 'Outros'; byEntitySum[e] = (byEntitySum[e] || 0) + Math.abs(t.amount); }});
+      var byEntityArr = Object.keys(byEntitySum).map(function (k) {{ return {{ title: k, total: Math.round(byEntitySum[k] * 100) / 100 }}; }}).sort(function (a, b) {{ return b.total - a.total; }});
+      var totalSai = byEntityArr.reduce(function (s, x) {{ return s + x.total; }}, 0);
+      var cum = 0;
+      var by_entity = byEntityArr.map(function (x) {{ cum += x.total; var pct = totalSai > 0 ? (cum / totalSai) * 100 : 0; var cls = pct <= 80 ? 'A' : (pct <= 95 ? 'B' : 'C'); return {{ title: x.title, total: x.total, cum_pct: Math.round(pct * 10) / 10, abc: cls }}; }});
+
+      var byCatSum = {{}};
+      saidas.forEach(function (t) {{ var c = t.category || 'Outros'; byCatSum[c] = (byCatSum[c] || 0) + Math.abs(t.amount); }});
+      var by_category = Object.keys(byCatSum).map(function (k) {{ return {{ category: k, total: Math.round(byCatSum[k] * 100) / 100 }}; }}).sort(function (a, b) {{ return b.total - a.total; }});
+
       var byCatEl = document.getElementById('conta-by-category');
       byCatEl.innerHTML = '';
-      (c.by_category || []).forEach(function (x) {{
+      by_category.forEach(function (x) {{
         var span = document.createElement('span');
         span.innerHTML = escapeHtml(x.category) + ' <strong>' + fmtMoney(x.total) + '</strong>';
         byCatEl.appendChild(span);
       }});
 
-      var top5Entity = (c.by_entity || []).slice(0, 5);
-      var top5Cat = (c.by_category || []).slice(0, 5);
+      var top5Entity = by_entity.slice(0, 5);
+      var top5Cat = by_category.slice(0, 5);
       renderDonut('conta-donut-entity', 'conta-donut-entity-legend', top5Entity, 'title');
       renderDonut('conta-donut-category', 'conta-donut-category-legend', top5Cat, 'category');
 
       var abcEl = document.getElementById('conta-abc-groups');
       abcEl.innerHTML = '';
       var byClass = {{ A: [], B: [], C: [] }};
-      (c.by_entity || []).forEach(function (r) {{ byClass[r.abc].push(r); }});
+      by_entity.forEach(function (r) {{ byClass[r.abc].push(r); }});
       ['A', 'B', 'C'].forEach(function (cls) {{
         var items = byClass[cls];
         var totalCls = items.reduce(function (sum, r) {{ return sum + r.total; }}, 0);
@@ -913,17 +1000,18 @@ def main():
 
       var byEntityEl = document.getElementById('conta-by-entity');
       byEntityEl.innerHTML = '';
-      (c.by_entity || []).forEach(function (x) {{
+      by_entity.forEach(function (x) {{
         var li = document.createElement('li');
         li.innerHTML = '<span class="name">' + escapeHtml(x.title) + '</span><span class="val">' + fmtMoney(x.total) + '</span>';
         byEntityEl.appendChild(li);
       }});
 
-      var txn = c.transactions || [];
+      var txn = PAYLOAD_CONTA.transactions || [];
+      var masterCats = PAYLOAD_CONTA.master_categories || [];
       var filterMonthSel = document.getElementById('conta-filter-month');
       filterMonthSel.innerHTML = '<option value="">Todos</option>';
       var monthsSeen = {{}};
-      txn.forEach(function (t) {{ monthsSeen[t.date.slice(0, 7)] = true; }});
+      txn.forEach(function (t) {{ monthsSeen[(t.date || '').slice(0, 7)] = true; }});
       Object.keys(monthsSeen).sort().forEach(function (m) {{
         var opt = document.createElement('option');
         opt.value = m;
@@ -932,58 +1020,114 @@ def main():
       }});
       var filterCatSel = document.getElementById('conta-filter-category');
       filterCatSel.innerHTML = '<option value="">Todas</option>';
-      (c.all_categories || []).forEach(function (cat) {{
+      masterCats.forEach(function (cat) {{
         var opt = document.createElement('option');
         opt.value = cat;
         opt.textContent = cat;
         filterCatSel.appendChild(opt);
       }});
+      var filterCategoriesContaEl = document.getElementById('filter-categories-conta');
+      if (filterCategoriesContaEl) {{
+        filterCategoriesContaEl.innerHTML = '';
+        masterCats.forEach(function (cat) {{
+          var opt = document.createElement('option');
+          opt.value = cat;
+          opt.textContent = cat;
+          filterCategoriesContaEl.appendChild(opt);
+        }});
+      }}
+      if (!window._contaCategoriesMultiBound && filterCategoriesContaEl) {{
+        window._contaCategoriesMultiBound = true;
+        filterCategoriesContaEl.addEventListener('change', function () {{
+          filterCategoriesConta = Array.from(this.selectedOptions).map(function (o) {{ return o.value; }}).filter(Boolean);
+          renderContaTab();
+        }});
+      }}
       var contaSearchTerm = '';
       var contaFilterMonth = '';
       var contaFilterCat = '';
       function renderContaTable() {{
-        var rows = txn.slice();
+        var rows = txn.map(function (t, i) {{ return {{ date: t.date, amount: t.amount, entity: t.entity, category: getRowCategoryConta(i), _count: getRowCountConta(i), _idx: i }}; }});
         if (contaSearchTerm) {{
           var q = contaSearchTerm.toLowerCase();
           rows = rows.filter(function (r) {{
-            return (r.date && r.date.toLowerCase().includes(q)) || (r.entity && r.entity.toLowerCase().includes(q)) || (r.category && r.category.toLowerCase().includes(q)) || (r.amount && r.amount.toString().includes(q));
+            return (r.date && r.date.toString().toLowerCase().includes(q)) || (r.entity && r.entity.toLowerCase().includes(q)) || (r.category && r.category.toLowerCase().includes(q)) || (r.amount && r.amount.toString().includes(q));
           }});
         }}
         if (contaFilterMonth) rows = rows.filter(function (r) {{ return r.date && r.date.slice(0, 7) === contaFilterMonth; }});
         if (contaFilterCat) rows = rows.filter(function (r) {{ return r.category === contaFilterCat; }});
-        rows.sort(function (a, b) {{ return (a.date || '').localeCompare(b.date || '') || (a.amount - b.amount); }});
+        rows.sort(function (a, b) {{ return (a.date || '').localeCompare(b.date || '') || ((a.amount || 0) - (b.amount || 0)); }});
         var tbody = document.getElementById('conta-tbody');
         tbody.innerHTML = '';
         rows.forEach(function (r) {{
           var tr = document.createElement('tr');
+          if (!r._count) tr.classList.add('hidden-row');
           var amt = r.amount || 0;
-          tr.innerHTML = '<td>' + (r.date || '') + '</td><td>' + escapeHtml(r.entity || '') + '</td><td>' + escapeHtml(r.category || '') + '</td><td class="amount" style="color:' + (amt >= 0 ? '#238636' : '#f85149') + '">' + fmtMoney(amt) + '</td>';
+          var catOpts = masterCats.map(function (c) {{ return '<option value="' + escapeHtml(c) + '"' + (c === r.category ? ' selected' : '') + '>' + escapeHtml(c) + '</option>'; }}).join('');
+          var catSelect = '<select data-idx="' + r._idx + '" class="conta-cat-select">' + catOpts + '</select>';
+          var countSelect = '<select data-idx="' + r._idx + '" class="conta-count-select"><option value="1"' + (r._count ? ' selected' : '') + '>Sim</option><option value="0"' + (!r._count ? ' selected' : '') + '>Não</option></select>';
+          tr.innerHTML = '<td>' + (r.date || '') + '</td><td>' + escapeHtml(r.entity || '') + '</td><td>' + catSelect + '</td><td class="amount" style="color:' + (amt >= 0 ? '#238636' : '#f85149') + '">' + fmtMoney(amt) + '</td><td>' + countSelect + '</td>';
           tbody.appendChild(tr);
+        }});
+        tbody.querySelectorAll('.conta-cat-select').forEach(function (sel) {{
+          sel.addEventListener('change', function () {{
+            var idx = parseInt(sel.getAttribute('data-idx'), 10);
+            overridesConta[idx] = overridesConta[idx] || {{}};
+            overridesConta[idx].category = sel.value;
+            saveOverridesConta();
+            renderContaTab();
+          }});
+        }});
+        tbody.querySelectorAll('.conta-count-select').forEach(function (sel) {{
+          sel.addEventListener('change', function () {{
+            var idx = parseInt(sel.getAttribute('data-idx'), 10);
+            overridesConta[idx] = overridesConta[idx] || {{}};
+            overridesConta[idx].count = sel.value === '1';
+            saveOverridesConta();
+            renderContaTab();
+          }});
         }});
       }}
       renderContaTable();
-      document.getElementById('conta-search').addEventListener('input', function () {{ contaSearchTerm = this.value.trim(); renderContaTable(); }});
-      filterMonthSel.addEventListener('change', function () {{ contaFilterMonth = this.value; renderContaTable(); }});
-      filterCatSel.addEventListener('change', function () {{ contaFilterCat = this.value; renderContaTable(); }});
+      if (!window._contaFiltersBound) {{
+        window._contaFiltersBound = true;
+        document.getElementById('conta-search').addEventListener('input', function () {{ contaSearchTerm = this.value.trim(); renderContaTable(); }});
+        filterMonthSel.addEventListener('change', function () {{ contaFilterMonth = this.value; renderContaTable(); }});
+        filterCatSel.addEventListener('change', function () {{ contaFilterCat = this.value; renderContaTable(); }});
+      }}
     }}
 
     function renderConsolidadoTab() {{
       var co = PAYLOAD_CONSOLIDADO;
       if (!co) return;
-      document.getElementById('dre-receitas').textContent = fmtMoney(co.receitas || 0);
-      document.getElementById('dre-despesas').textContent = fmtMoney(co.despesas || 0);
-      var res = co.resultado || 0;
+      var eff = typeof getEffectiveContaTransactions === 'function' ? getEffectiveContaTransactions() : [];
+      if (filterCategoriesConsolidado.length) eff = eff.filter(function (t) {{ return filterCategoriesConsolidado.indexOf(t.category) >= 0; }});
+      var receitas = eff.filter(function (t) {{ return t.amount > 0; }}).reduce(function (s, t) {{ return s + t.amount; }}, 0);
+      var despesas = eff.filter(function (t) {{ return t.amount < 0; }}).reduce(function (s, t) {{ return s + Math.abs(t.amount); }}, 0);
+      var resultado = Math.round((receitas - despesas) * 100) / 100;
+      document.getElementById('dre-receitas').textContent = fmtMoney(receitas);
+      document.getElementById('dre-despesas').textContent = fmtMoney(despesas);
       var resEl = document.getElementById('dre-resultado');
-      resEl.textContent = fmtMoney(res);
-      resEl.style.color = res >= 0 ? '#238636' : '#f85149';
+      resEl.textContent = fmtMoney(resultado);
+      resEl.style.color = resultado >= 0 ? '#238636' : '#f85149';
+
+      var byMonthEnt = {{}}, byMonthSai = {{}};
+      eff.forEach(function (t) {{
+        var m = (t.date || '').slice(0, 7);
+        if (!m) return;
+        if (t.amount > 0) byMonthEnt[m] = (byMonthEnt[m] || 0) + t.amount;
+        else byMonthSai[m] = (byMonthSai[m] || 0) + Math.abs(t.amount);
+      }});
+      var months = Object.keys({{ ...byMonthEnt, ...byMonthSai }}).sort();
+      var byMonth = months.map(function (m) {{ return {{ month: m, entradas: Math.round((byMonthEnt[m] || 0) * 100) / 100, saidas: Math.round((byMonthSai[m] || 0) * 100) / 100, saldo: Math.round(((byMonthEnt[m] || 0) - (byMonthSai[m] || 0)) * 100) / 100 }}; }});
 
       var barsEl = document.getElementById('consolidado-month-bars');
       barsEl.innerHTML = '';
-      var byMonth = co.by_month_fluxo || [];
+      var byMonthData = byMonth;
       var maxAbs = 1;
-      byMonth.forEach(function (m) {{ maxAbs = Math.max(maxAbs, Math.abs(m.saldo || 0)); }});
+      byMonthData.forEach(function (m) {{ maxAbs = Math.max(maxAbs, Math.abs(m.saldo || 0)); }});
       var barMaxH = 160;
-      byMonth.forEach(function (m) {{
+      byMonthData.forEach(function (m) {{
         var saldo = m.saldo || 0;
         var pct = maxAbs > 0 ? (Math.abs(saldo) / maxAbs) * 100 : 0;
         var h = (pct / 100) * barMaxH;
@@ -995,13 +1139,89 @@ def main():
         barsEl.appendChild(col);
       }});
 
+      var byCatSum = {{}};
+      eff.filter(function (t) {{ return t.amount < 0; }}).forEach(function (t) {{ var c = t.category || 'Outros'; byCatSum[c] = (byCatSum[c] || 0) + Math.abs(t.amount); }});
+      var by_category_conta = Object.keys(byCatSum).map(function (k) {{ return {{ category: k, total: Math.round(byCatSum[k] * 100) / 100 }}; }}).sort(function (a, b) {{ return b.total - a.total; }});
       var byCatEl = document.getElementById('consolidado-by-category');
       byCatEl.innerHTML = '';
-      (co.by_category_conta || []).forEach(function (x) {{
+      by_category_conta.forEach(function (x) {{
         var span = document.createElement('span');
         span.innerHTML = escapeHtml(x.category) + ' <strong>' + fmtMoney(x.total) + '</strong>';
         byCatEl.appendChild(span);
       }});
+
+      var filterConsolidadoEl = document.getElementById('filter-categories-consolidado');
+      if (filterConsolidadoEl && PAYLOAD_CONTA && PAYLOAD_CONTA.master_categories && !window._consolidadoCategoriesBound) {{
+        window._consolidadoCategoriesBound = true;
+        filterConsolidadoEl.innerHTML = '';
+        PAYLOAD_CONTA.master_categories.forEach(function (cat) {{
+          var opt = document.createElement('option');
+          opt.value = cat;
+          opt.textContent = cat;
+          filterConsolidadoEl.appendChild(opt);
+        }});
+        filterConsolidadoEl.addEventListener('change', function () {{
+          filterCategoriesConsolidado = Array.from(this.selectedOptions).map(function (o) {{ return o.value; }}).filter(Boolean);
+          renderConsolidadoTab();
+        }});
+      }}
+
+      var dreTbody = document.getElementById('dre-print-tbody');
+      var dfcTheadRow = document.getElementById('dfc-print-thead-row');
+      var dfcTbody = document.getElementById('dfc-print-tbody');
+      if (dreTbody) {{
+        dreTbody.innerHTML = '';
+        var despesasPorCat = {{}};
+        eff.filter(function (t) {{ return t.amount < 0; }}).forEach(function (t) {{ var c = t.category || 'Outros'; despesasPorCat[c] = (despesasPorCat[c] || 0) + Math.abs(t.amount); }});
+        var tr1 = document.createElement('tr');
+        tr1.innerHTML = '<td>Receitas</td><td class="amount">' + fmtMoney(receitas) + '</td>';
+        dreTbody.appendChild(tr1);
+        Object.keys(despesasPorCat).sort(function (a, b) {{ return despesasPorCat[b] - despesasPorCat[a]; }}).forEach(function (cat) {{
+          var tr = document.createElement('tr');
+          tr.innerHTML = '<td>Despesas — ' + escapeHtml(cat) + '</td><td class="amount">' + fmtMoney(Math.round(despesasPorCat[cat] * 100) / 100) + '</td>';
+          dreTbody.appendChild(tr);
+        }});
+        var trTotal = document.createElement('tr');
+        trTotal.className = 'total-row';
+        trTotal.innerHTML = '<td>Despesas (total)</td><td class="amount">' + fmtMoney(despesas) + '</td>';
+        dreTbody.appendChild(trTotal);
+        var trRes = document.createElement('tr');
+        trRes.className = 'total-row';
+        trRes.innerHTML = '<td>Resultado (DRE)</td><td class="amount">' + fmtMoney(resultado) + '</td>';
+        dreTbody.appendChild(trRes);
+      }}
+      if (dfcTheadRow && dfcTbody) {{
+        dfcTheadRow.innerHTML = '<th>Descrição</th>';
+        byMonthData.forEach(function (m) {{ var th = document.createElement('th'); th.className = 'amount'; th.textContent = monthNames[m.month.slice(5, 7)] || m.month.slice(5, 7); dfcTheadRow.appendChild(th); }});
+        var thTotal = document.createElement('th');
+        thTotal.className = 'amount';
+        thTotal.textContent = 'Total';
+        dfcTheadRow.appendChild(thTotal);
+        dfcTbody.innerHTML = '';
+        var rowEnt = document.createElement('tr');
+        rowEnt.innerHTML = '<td>Entradas</td>';
+        var sumEnt = 0;
+        byMonthData.forEach(function (m) {{ var td = document.createElement('td'); td.className = 'amount'; td.textContent = fmtMoney(m.entradas); rowEnt.appendChild(td); sumEnt += m.entradas; }});
+        var tdEntTotal = document.createElement('td'); tdEntTotal.className = 'amount'; tdEntTotal.textContent = fmtMoney(Math.round(sumEnt * 100) / 100); rowEnt.appendChild(tdEntTotal);
+        dfcTbody.appendChild(rowEnt);
+        var rowSai = document.createElement('tr');
+        rowSai.innerHTML = '<td>Saídas</td>';
+        var sumSai = 0;
+        byMonthData.forEach(function (m) {{ var td = document.createElement('td'); td.className = 'amount'; td.textContent = fmtMoney(m.saidas); rowSai.appendChild(td); sumSai += m.saidas; }});
+        var tdSaiTotal = document.createElement('td'); tdSaiTotal.className = 'amount'; tdSaiTotal.textContent = fmtMoney(Math.round(sumSai * 100) / 100); rowSai.appendChild(tdSaiTotal);
+        dfcTbody.appendChild(rowSai);
+        var rowSaldo = document.createElement('tr');
+        rowSaldo.className = 'total-row';
+        rowSaldo.innerHTML = '<td>Saldo do mês</td>';
+        byMonthData.forEach(function (m) {{ var td = document.createElement('td'); td.className = 'amount'; td.textContent = fmtMoney(m.saldo); rowSaldo.appendChild(td); }});
+        var tdSaldoTotal = document.createElement('td'); tdSaldoTotal.className = 'amount'; tdSaldoTotal.textContent = fmtMoney(resultado); rowSaldo.appendChild(tdSaldoTotal);
+        dfcTbody.appendChild(rowSaldo);
+      }}
+      var btnPrint = document.getElementById('btn-print-dre-dfc');
+      if (btnPrint && !window._btnPrintDreBound) {{
+        window._btnPrintDreBound = true;
+        btnPrint.addEventListener('click', function () {{ window.print(); }});
+      }}
     }}
 
     var sortKey = 'date';
@@ -1009,6 +1229,9 @@ def main():
     var searchTerm = '';
     var filterMonthVal = '';
     var filterCatVal = '';
+    var filterCategoriesCartao = [];
+    var filterCategoriesConta = [];
+    var filterCategoriesConsolidado = [];
 
     function renderTable(data) {{
       var rows = PAYLOAD.expenses.map(function (r, i) {{
@@ -1074,6 +1297,16 @@ def main():
       opt.textContent = c.category;
       filterCat.appendChild(opt);
     }});
+    var filterCategoriesCartaoEl = document.getElementById('filter-categories-cartao');
+    if (filterCategoriesCartaoEl) {{
+      filterCategoriesCartaoEl.innerHTML = '';
+      allCategories.forEach(function (c) {{
+        var opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        filterCategoriesCartaoEl.appendChild(opt);
+      }});
+    }}
 
     document.querySelectorAll('#expenses-table th[data-sort]').forEach(function (th) {{
       th.addEventListener('click', function () {{
@@ -1088,6 +1321,10 @@ def main():
     document.getElementById('search').addEventListener('input', function () {{ searchTerm = this.value.trim(); renderAll(); }});
     filterMonth.addEventListener('change', function () {{ filterMonthVal = this.value; renderAll(); }});
     filterCat.addEventListener('change', function () {{ filterCatVal = this.value; renderAll(); }});
+    if (filterCategoriesCartaoEl) filterCategoriesCartaoEl.addEventListener('change', function () {{
+      filterCategoriesCartao = Array.from(this.selectedOptions).map(function (o) {{ return o.value; }}).filter(Boolean);
+      renderAll();
+    }});
 
     var recEl = document.getElementById('recommendations');
     (PAYLOAD.recommendations || []).forEach(function (text) {{
