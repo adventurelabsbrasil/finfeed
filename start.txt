@@ -1,0 +1,13 @@
+crie um app simples para mobile onde possa ser feito o upload semanal de um arquivo csv da fatura de cartao de credito do nubank
+o app precisa ler os dados e categorizar
+ele deve criar graficos de custo por categoria e por entidade
+ele deve mostrar top5 despesas
+deve ter tabela dinamica para visualizar
+deve ter filtros de periodos
+
+ele deve ter acesso a login via usuario e senha
+pensei em colocar ele no supabase ou firebase, vc me guia nisso
+
+será feito o deploy dele em vercel, entao tem que ter um arquivo do cursor ja programado para revisar antes de commmitar
+
+na passa assets eu coloquei alguns csv ja para ter como base inicial tanto de colunas quanto de graficos a serem feitos
