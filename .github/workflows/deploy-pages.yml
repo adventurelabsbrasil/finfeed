@@ -28,8 +28,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Consolidar CSVs
+      - name: Consolidar CSVs (cartão)
         run: python scripts/consolidate_csv.py
+
+      - name: Consolidar Conta Corrente
+        run: python scripts/consolidate_conta_corrente.py
 
       - name: Gerar dashboard
         run: python scripts/build_dashboard.py

@@ -13,9 +13,11 @@ import csv
 import json
 from pathlib import Path
 from collections import defaultdict
+from typing import Optional
 
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
 CSV_PATH = ASSETS / "consolidated_12m_expenses.csv"
+CONTA_JSON_PATH = ASSETS / "consolidated_conta_corrente_2025.json"
 OUT_HTML = Path(__file__).resolve().parent.parent / "index.html"
 
 # Teto orçamentário mensal (despesas básicas no cartão, exc. lazer, financiamento, limpeza, investimentos, educação, consórcio)
@@ -156,6 +158,79 @@ def over_budget_months(by_month: list[dict]) -> list[dict]:
     return out
 
 
+def load_conta_corrente() -> Optional[dict]:
+    """Carrega dados da conta corrente se o JSON existir."""
+    if not CONTA_JSON_PATH.exists():
+        return None
+    with open(CONTA_JSON_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def build_conta_payload(conta_data: dict) -> dict:
+    """Monta payload para a aba Conta Corrente: by_month, by_entity_abc, by_category."""
+    transactions = conta_data.get("transactions", [])
+    meta = conta_data.get("meta", {})
+    saidas = [t for t in transactions if t.get("amount", 0) < 0]
+    # Por entidade (saídas): total em valor absoluto para ABC
+    by_entity_sum = defaultdict(float)
+    for t in saidas:
+        ent = (t.get("entity") or "Outros").strip()
+        by_entity_sum[ent] += abs(t["amount"])
+    by_entity = [
+        {"title": k, "total": round(v, 2)}
+        for k, v in sorted(by_entity_sum.items(), key=lambda x: -x[1])
+    ]
+    total_saidas = sum(x["total"] for x in by_entity)
+    by_entity_abc = build_abc(by_entity, total_saidas) if total_saidas > 0 else []
+
+    # Por categoria (saídas)
+    by_cat_sum = defaultdict(float)
+    for t in saidas:
+        cat = (t.get("category") or "Outros").strip()
+        by_cat_sum[cat] += abs(t["amount"])
+    by_category = [
+        {"category": k, "total": round(v, 2)}
+        for k, v in sorted(by_cat_sum.items(), key=lambda x: -x[1])
+    ]
+
+    # Por mês: entradas e saídas
+    by_month_ent = defaultdict(float)
+    by_month_sai = defaultdict(float)
+    for t in transactions:
+        month = (t.get("date") or "")[:7]
+        if not month:
+            continue
+        amt = t.get("amount", 0)
+        if amt > 0:
+            by_month_ent[month] += amt
+        else:
+            by_month_sai[month] += abs(amt)
+    months = sorted(set(by_month_ent) | set(by_month_sai))
+    by_month = [
+        {
+            "month": m,
+            "entradas": round(by_month_ent[m], 2),
+            "saidas": round(by_month_sai[m], 2),
+            "saldo": round(by_month_ent[m] - by_month_sai[m], 2),
+        }
+        for m in months
+    ]
+
+    all_categories = sorted({c["category"] for c in by_category} | {"Outros"})
+    return {
+        "year": 2025,
+        "entradas_total": meta.get("entradas_total", 0),
+        "saidas_total": meta.get("saidas_total", 0),
+        "saldo_2025": meta.get("saldo_2025", 0),
+        "count": len(transactions),
+        "transactions": transactions,
+        "by_entity": by_entity_abc,
+        "by_category": by_category,
+        "by_month": by_month,
+        "all_categories": all_categories,
+    }
+
+
 def build_recommendations(
     by_category: list[dict],
     by_month: list[dict],
@@ -221,16 +296,43 @@ def main():
     }
     data_js = json.dumps(payload, ensure_ascii=False)
 
+    conta_raw = load_conta_corrente()
+    payload_conta = build_conta_payload(conta_raw) if conta_raw else None
+    data_conta_js = json.dumps(payload_conta, ensure_ascii=False) if payload_conta else "null"
+
+    # Consolidado: DRE (receitas - despesas) e DFC (fluxo mensal)
+    receitas_consolidado = payload_conta["entradas_total"] if payload_conta else 0
+    despesas_consolidado = (payload_conta["saidas_total"] if payload_conta else 0)  # saídas da conta já incluem pagamento fatura
+    resultado_dre = round(receitas_consolidado - despesas_consolidado, 2)
+    by_month_conta = payload_conta["by_month"] if payload_conta else []
+    payload_consolidado = {
+        "year": 2025,
+        "receitas": receitas_consolidado,
+        "despesas": despesas_consolidado,
+        "resultado": resultado_dre,
+        "by_month_fluxo": by_month_conta,
+        "total_cartao": total_2025,
+        "by_category_cartao": by_category,
+        "by_category_conta": payload_conta["by_category"] if payload_conta else [],
+    }
+    data_consolidado_js = json.dumps(payload_consolidado, ensure_ascii=False)
+
     html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gastos no Cartão de Crédito Nubank - Rodrigo</title>
+  <title>Finfeed — Cartão, Conta Corrente e DRE 2025 - Rodrigo</title>
   <style>
     :root {{ font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1419; color: #e6edf3; }}
     * {{ box-sizing: border-box; }}
     body {{ max-width: 1200px; margin: 0 auto; padding: 1.5rem; }}
+    .tabs-nav {{ display: flex; gap: 0.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid #30363d; padding-bottom: 0; }}
+    .tabs-nav button {{ background: transparent; border: none; border-bottom: 2px solid transparent; color: #8b949e; padding: 0.6rem 1rem; font-size: 0.95rem; cursor: pointer; margin-bottom: -1px; }}
+    .tabs-nav button:hover {{ color: #e6edf3; }}
+    .tabs-nav button.active {{ color: #58a6ff; border-bottom-color: #58a6ff; }}
+    .tab-pane {{ display: none; }}
+    .tab-pane.active {{ display: block; }}
     h1 {{ font-size: 1.4rem; font-weight: 600; margin-bottom: 0.25rem; }}
     .subtitle {{ color: #8b949e; font-size: 0.9rem; margin-bottom: 0.5rem; }}
     .notice {{ background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: #8b949e; line-height: 1.5; }}
@@ -307,8 +409,17 @@ def main():
   </style>
 </head>
 <body>
-  <h1>Gastos no Cartão de Crédito Nubank — Rodrigo</h1>
-  <p class="subtitle">Dedicado para necessidades básicas · Histórico 2025</p>
+  <h1>Finfeed — Rodrigo · 2025</h1>
+  <p class="subtitle">Cartão de crédito, Conta Corrente Nubank e DRE/DFC pessoal</p>
+  <nav class="tabs-nav">
+    <button type="button" class="tab-btn active" data-tab="tab-cartao">Cartão de Crédito</button>
+    <button type="button" class="tab-btn" data-tab="tab-conta">Conta Corrente</button>
+    <button type="button" class="tab-btn" data-tab="tab-consolidado">Consolidado (DRE + DFC)</button>
+  </nav>
+
+  <div id="tab-cartao" class="tab-pane active">
+  <h2 style="font-size:1.1rem; color:#8b949e; margin-bottom:0.5rem;">Cartão de Crédito Nubank</h2>
+  <p class="subtitle" style="margin-top:0;">Dedicado para necessidades básicas · Histórico 2025</p>
 
   <div class="notice">
     <strong>O que este relatório inclui</strong><br>
@@ -412,9 +523,90 @@ def main():
     <p style="margin:0 0 0.5rem 0; color:#8b949e;">Este foi o histórico de 2025 no cartão. Com base nos dados:</p>
     <ul id="recommendations"></ul>
   </section>
+  </div>
+
+  <div id="tab-conta" class="tab-pane">
+    <h2 style="font-size:1.1rem; color:#8b949e; margin-bottom:0.5rem;">Conta Corrente Nubank</h2>
+    <p class="subtitle" style="margin-top:0;">Entradas e saídas 2025 · Por categorias e entidades</p>
+    <div class="notice"><strong>O que este relatório inclui</strong><br>Movimentações da <strong>conta corrente Nubank</strong> em 2025: transferências recebidas e enviadas (PIX), pagamentos de fatura e boleto, resgates e aplicações RDB, compras no débito.</div>
+    <div class="cards">
+      <div class="card"><div class="label">Entradas 2025</div><div class="value" id="conta-entradas" style="color:#238636;">—</div></div>
+      <div class="card"><div class="label">Saídas 2025</div><div class="value total" id="conta-saidas">—</div></div>
+      <div class="card"><div class="label">Saldo 2025</div><div class="value" id="conta-saldo">—</div></div>
+      <div class="card"><div class="label">Lançamentos</div><div class="value" id="conta-count">—</div></div>
+    </div>
+    <section>
+      <h2>Fluxo por mês (entradas vs saídas)</h2>
+      <div class="month-bars" id="conta-month-bars"></div>
+    </section>
+    <section>
+      <h2>Principais categorias (saídas)</h2>
+      <div class="category-list" id="conta-by-category"></div>
+    </section>
+    <section>
+      <h2>Gráficos rosca — Top 5 (saídas)</h2>
+      <div class="donut-charts">
+        <div class="donut-wrap">
+          <h3 style="font-size:0.95rem; color:#8b949e; margin-bottom:0.5rem;">Por entidade</h3>
+          <div id="conta-donut-entity" class="donut-outer"></div>
+          <ul id="conta-donut-entity-legend" class="donut-legend"></ul>
+        </div>
+        <div class="donut-wrap">
+          <h3 style="font-size:0.95rem; color:#8b949e; margin-bottom:0.5rem;">Por categoria</h3>
+          <div id="conta-donut-category" class="donut-outer"></div>
+          <ul id="conta-donut-category-legend" class="donut-legend"></ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Mapa ABC (80/20) — saídas por entidade</h2>
+      <p style="color:#8b949e; font-size:0.85rem; margin-bottom:0.75rem;">A = até 80% do total · B = 80–95% · C = resto.</p>
+      <div id="conta-abc-groups"></div>
+    </section>
+    <section>
+      <h2>Principais saídas por entidade</h2>
+      <ul class="top-list" id="conta-by-entity"></ul>
+    </section>
+    <section>
+      <h2>Tabela de lançamentos (2025)</h2>
+      <div class="filters">
+        <label>Mês:</label><select id="conta-filter-month"><option value="">Todos</option></select>
+        <label>Categoria:</label><select id="conta-filter-category"><option value="">Todas</option></select>
+        <input type="text" id="conta-search" placeholder="Buscar por data, entidade ou valor...">
+      </div>
+      <div class="table-wrap">
+        <table id="conta-expenses-table">
+          <thead><tr><th data-sort="date">Data</th><th data-sort="entity">Entidade</th><th>Categoria</th><th data-sort="amount">Valor (R$)</th></tr></thead>
+          <tbody id="conta-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div id="tab-consolidado" class="tab-pane">
+    <h2 style="font-size:1.1rem; color:#8b949e; margin-bottom:0.5rem;">Consolidado — DRE e DFC 2025</h2>
+    <p class="subtitle" style="margin-top:0;">Receitas e despesas (conta corrente) · Fluxo de caixa mensal</p>
+    <div class="notice"><strong>DRE pessoal</strong>: Receitas = entradas na conta; Despesas = saídas na conta (inclui pagamento de fatura do cartão). <strong>DFC</strong>: fluxo de caixa por mês (entradas − saídas na conta).</div>
+    <div class="cards">
+      <div class="card"><div class="label">Receitas 2025</div><div class="value" id="dre-receitas" style="color:#238636;">—</div></div>
+      <div class="card"><div class="label">Despesas 2025</div><div class="value total" id="dre-despesas">—</div></div>
+      <div class="card"><div class="label">Resultado (DRE)</div><div class="value" id="dre-resultado">—</div></div>
+    </div>
+    <section>
+      <h2>DFC — Fluxo de caixa por mês</h2>
+      <div class="month-bars" id="consolidado-month-bars"></div>
+      <p class="budget-legend">Verde = saldo positivo no mês · Vermelho = saldo negativo.</p>
+    </section>
+    <section>
+      <h2>Despesas por categoria (conta corrente — saídas)</h2>
+      <div class="category-list" id="consolidado-by-category"></div>
+    </section>
+  </div>
 
   <script>
     const PAYLOAD = {data_js};
+    const PAYLOAD_CONTA = {data_conta_js};
+    const PAYLOAD_CONSOLIDADO = {data_consolidado_js};
     var OVERRIDES_KEY = 'finfeed_overrides_2025';
 
     function fmtMoney(n) {{
@@ -643,6 +835,175 @@ def main():
       renderTable(data);
     }}
 
+    function renderContaTab() {{
+      if (!PAYLOAD_CONTA) {{
+        var pane = document.getElementById('tab-conta');
+        if (pane) pane.innerHTML = '<p class="notice">Execute <code>python scripts/consolidate_conta_corrente.py</code> e gere o dashboard novamente para ver os dados da conta corrente.</p>';
+        return;
+      }}
+      var c = PAYLOAD_CONTA;
+      document.getElementById('conta-entradas').textContent = fmtMoney(c.entradas_total || 0);
+      document.getElementById('conta-saidas').textContent = fmtMoney(c.saidas_total || 0);
+      document.getElementById('conta-saldo').textContent = fmtMoney(c.saldo_2025 || 0);
+      document.getElementById('conta-saldo').style.color = (c.saldo_2025 || 0) >= 0 ? '#238636' : '#f85149';
+      document.getElementById('conta-count').textContent = (c.count || 0).toLocaleString('pt-BR');
+
+      var barsEl = document.getElementById('conta-month-bars');
+      barsEl.innerHTML = '';
+      var byMonth = c.by_month || [];
+      var maxVal = 1;
+      byMonth.forEach(function (m) {{ maxVal = Math.max(maxVal, m.entradas || 0, m.saidas || 0); }});
+      var barMaxH = 160;
+      byMonth.forEach(function (m) {{
+        var hEnt = maxVal > 0 ? ((m.entradas || 0) / maxVal) * barMaxH : 0;
+        var hSai = maxVal > 0 ? ((m.saidas || 0) / maxVal) * barMaxH : 0;
+        var label = monthNames[m.month.slice(5, 7)] || m.month.slice(5, 7);
+        var col = document.createElement('div');
+        col.className = 'col';
+        col.innerHTML = '<span class="bar under" style="height:' + Math.max(4, hEnt) + 'px; margin-bottom:2px;" title="Entradas ' + fmtMoney(m.entradas) + '"></span><span class="bar over" style="height:' + Math.max(4, hSai) + 'px" title="Saídas ' + fmtMoney(m.saidas) + '"></span><span class="label">' + label + '</span>';
+        barsEl.appendChild(col);
+      }});
+
+      var byCatEl = document.getElementById('conta-by-category');
+      byCatEl.innerHTML = '';
+      (c.by_category || []).forEach(function (x) {{
+        var span = document.createElement('span');
+        span.innerHTML = escapeHtml(x.category) + ' <strong>' + fmtMoney(x.total) + '</strong>';
+        byCatEl.appendChild(span);
+      }});
+
+      var top5Entity = (c.by_entity || []).slice(0, 5);
+      var top5Cat = (c.by_category || []).slice(0, 5);
+      renderDonut('conta-donut-entity', 'conta-donut-entity-legend', top5Entity, 'title');
+      renderDonut('conta-donut-category', 'conta-donut-category-legend', top5Cat, 'category');
+
+      var abcEl = document.getElementById('conta-abc-groups');
+      abcEl.innerHTML = '';
+      var byClass = {{ A: [], B: [], C: [] }};
+      (c.by_entity || []).forEach(function (r) {{ byClass[r.abc].push(r); }});
+      ['A', 'B', 'C'].forEach(function (cls) {{
+        var items = byClass[cls];
+        var totalCls = items.reduce(function (sum, r) {{ return sum + r.total; }}, 0);
+        var group = document.createElement('div');
+        group.className = 'abc-group';
+        var header = document.createElement('div');
+        header.className = 'abc-group-header';
+        header.innerHTML = '<span>Classe ' + cls + ' <span class="abc-badge ' + cls + '">' + cls + '</span> — ' + items.length + ' itens</span><span class="toggle">Total: ' + fmtMoney(totalCls) + ' ▶</span>';
+        var body = document.createElement('div');
+        body.className = 'abc-group-body collapsed';
+        var table = document.createElement('table');
+        table.className = 'abc-table';
+        table.innerHTML = '<thead><tr><th>Entidade</th><th>Total (R$)</th><th>% Acum.</th></tr></thead><tbody></tbody>';
+        var tbody = table.querySelector('tbody');
+        items.forEach(function (r) {{
+          var tr = document.createElement('tr');
+          tr.className = 'abc-' + r.abc;
+          tr.innerHTML = '<td>' + escapeHtml(r.title) + '</td><td class="amount">' + fmtMoney(r.total) + '</td><td>' + r.cum_pct + '%</td>';
+          tbody.appendChild(tr);
+        }});
+        body.appendChild(table);
+        group.appendChild(header);
+        group.appendChild(body);
+        header.addEventListener('click', function () {{
+          body.classList.toggle('collapsed');
+          header.querySelector('.toggle').textContent = 'Total: ' + fmtMoney(totalCls) + (body.classList.contains('collapsed') ? ' ▶' : ' ▼');
+        }});
+        abcEl.appendChild(group);
+      }});
+
+      var byEntityEl = document.getElementById('conta-by-entity');
+      byEntityEl.innerHTML = '';
+      (c.by_entity || []).forEach(function (x) {{
+        var li = document.createElement('li');
+        li.innerHTML = '<span class="name">' + escapeHtml(x.title) + '</span><span class="val">' + fmtMoney(x.total) + '</span>';
+        byEntityEl.appendChild(li);
+      }});
+
+      var txn = c.transactions || [];
+      var filterMonthSel = document.getElementById('conta-filter-month');
+      filterMonthSel.innerHTML = '<option value="">Todos</option>';
+      var monthsSeen = {{}};
+      txn.forEach(function (t) {{ monthsSeen[t.date.slice(0, 7)] = true; }});
+      Object.keys(monthsSeen).sort().forEach(function (m) {{
+        var opt = document.createElement('option');
+        opt.value = m;
+        opt.textContent = monthNames[m.slice(5, 7)] || m;
+        filterMonthSel.appendChild(opt);
+      }});
+      var filterCatSel = document.getElementById('conta-filter-category');
+      filterCatSel.innerHTML = '<option value="">Todas</option>';
+      (c.all_categories || []).forEach(function (cat) {{
+        var opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        filterCatSel.appendChild(opt);
+      }});
+      var contaSearchTerm = '';
+      var contaFilterMonth = '';
+      var contaFilterCat = '';
+      function renderContaTable() {{
+        var rows = txn.slice();
+        if (contaSearchTerm) {{
+          var q = contaSearchTerm.toLowerCase();
+          rows = rows.filter(function (r) {{
+            return (r.date && r.date.toLowerCase().includes(q)) || (r.entity && r.entity.toLowerCase().includes(q)) || (r.category && r.category.toLowerCase().includes(q)) || (r.amount && r.amount.toString().includes(q));
+          }});
+        }}
+        if (contaFilterMonth) rows = rows.filter(function (r) {{ return r.date && r.date.slice(0, 7) === contaFilterMonth; }});
+        if (contaFilterCat) rows = rows.filter(function (r) {{ return r.category === contaFilterCat; }});
+        rows.sort(function (a, b) {{ return (a.date || '').localeCompare(b.date || '') || (a.amount - b.amount); }});
+        var tbody = document.getElementById('conta-tbody');
+        tbody.innerHTML = '';
+        rows.forEach(function (r) {{
+          var tr = document.createElement('tr');
+          var amt = r.amount || 0;
+          tr.innerHTML = '<td>' + (r.date || '') + '</td><td>' + escapeHtml(r.entity || '') + '</td><td>' + escapeHtml(r.category || '') + '</td><td class="amount" style="color:' + (amt >= 0 ? '#238636' : '#f85149') + '">' + fmtMoney(amt) + '</td>';
+          tbody.appendChild(tr);
+        }});
+      }}
+      renderContaTable();
+      document.getElementById('conta-search').addEventListener('input', function () {{ contaSearchTerm = this.value.trim(); renderContaTable(); }});
+      filterMonthSel.addEventListener('change', function () {{ contaFilterMonth = this.value; renderContaTable(); }});
+      filterCatSel.addEventListener('change', function () {{ contaFilterCat = this.value; renderContaTable(); }});
+    }}
+
+    function renderConsolidadoTab() {{
+      var co = PAYLOAD_CONSOLIDADO;
+      if (!co) return;
+      document.getElementById('dre-receitas').textContent = fmtMoney(co.receitas || 0);
+      document.getElementById('dre-despesas').textContent = fmtMoney(co.despesas || 0);
+      var res = co.resultado || 0;
+      var resEl = document.getElementById('dre-resultado');
+      resEl.textContent = fmtMoney(res);
+      resEl.style.color = res >= 0 ? '#238636' : '#f85149';
+
+      var barsEl = document.getElementById('consolidado-month-bars');
+      barsEl.innerHTML = '';
+      var byMonth = co.by_month_fluxo || [];
+      var maxAbs = 1;
+      byMonth.forEach(function (m) {{ maxAbs = Math.max(maxAbs, Math.abs(m.saldo || 0)); }});
+      var barMaxH = 160;
+      byMonth.forEach(function (m) {{
+        var saldo = m.saldo || 0;
+        var pct = maxAbs > 0 ? (Math.abs(saldo) / maxAbs) * 100 : 0;
+        var h = (pct / 100) * barMaxH;
+        var positive = saldo >= 0;
+        var label = monthNames[(m.month || '').slice(5, 7)] || (m.month || '').slice(5, 7);
+        var col = document.createElement('div');
+        col.className = 'col';
+        col.innerHTML = '<span class="bar ' + (positive ? 'under' : 'over') + '" style="height:' + Math.max(4, h) + 'px" title="Saldo ' + fmtMoney(saldo) + '"></span><span class="label' + (positive ? '' : ' over') + '">' + label + '</span>';
+        barsEl.appendChild(col);
+      }});
+
+      var byCatEl = document.getElementById('consolidado-by-category');
+      byCatEl.innerHTML = '';
+      (co.by_category_conta || []).forEach(function (x) {{
+        var span = document.createElement('span');
+        span.innerHTML = escapeHtml(x.category) + ' <strong>' + fmtMoney(x.total) + '</strong>';
+        byCatEl.appendChild(span);
+      }});
+    }}
+
     var sortKey = 'date';
     var sortDir = 1;
     var searchTerm = '';
@@ -735,7 +1096,20 @@ def main():
       recEl.appendChild(li);
     }});
 
+    document.querySelectorAll('.tab-btn').forEach(function (btn) {{
+      btn.addEventListener('click', function () {{
+        var tabId = btn.getAttribute('data-tab');
+        document.querySelectorAll('.tab-pane').forEach(function (p) {{ p.classList.remove('active'); }});
+        document.querySelectorAll('.tab-btn').forEach(function (b) {{ b.classList.remove('active'); }});
+        var pane = document.getElementById(tabId);
+        if (pane) pane.classList.add('active');
+        btn.classList.add('active');
+      }});
+    }});
+
     renderAll();
+    renderContaTab();
+    renderConsolidadoTab();
   </script>
 </body>
 </html>

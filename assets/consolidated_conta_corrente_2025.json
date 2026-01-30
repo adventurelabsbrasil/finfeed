@@ -1,0 +1,1707 @@
+{
+  "meta": {
+    "year": 2025,
+    "transaction_count": 212,
+    "entradas_total": 87132.49,
+    "saidas_total": 79840.66,
+    "saldo_2025": 7291.83
+  },
+  "transactions": [
+    {
+      "date": "2025-01-02",
+      "amount": -50.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-02",
+      "amount": -2.5,
+      "entity": "Sandra mara portal silveira",
+      "description": "Transferência enviada pelo Pix - Sandra mara portal silveira - •••.440.630-•• - PAGSEGURO INTERNET IP S.A. (0290) Agência: 1 Conta: 47987797-9",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-05",
+      "amount": -4.86,
+      "entity": "MERCADOPAGO.COM REPRESENTACOES LTDA.",
+      "description": "Transferência enviada pelo Pix - MERCADOPAGO.COM REPRESENTACOES LTDA. - 10.573.521/0001-91 - MERCADO PAGO IP LTDA. (0323) Agência: 1 Conta: 1207498566-1",
+      "category": "Compras / Pagamentos online",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-05",
+      "amount": -1.63,
+      "entity": "MERCADOPAGO.COM REPRESENTACOES LTDA.",
+      "description": "Transferência enviada pelo Pix - MERCADOPAGO.COM REPRESENTACOES LTDA. - 10.573.521/0001-91 - MERCADO PAGO IP LTDA. (0323) Agência: 1 Conta: 9345847269-7",
+      "category": "Compras / Pagamentos online",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -1217.26,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -799.92,
+      "entity": "IPVA SEFAZ/ RS",
+      "description": "Transferência enviada pelo Pix - IPVA SEFAZ/ RS - 87.958.674/0001-81 - Banco do Estado do Rio Grande do Sul (0041) Agência: 100 Conta: 32748960-6",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -98.9,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - BCO DO BRASIL S.A. (0001) Agência: 1607 Conta: 333666-2",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -96.62,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - ITAÚ UNIBANCO S.A. (0341) Agência: 332 Conta: 81010-0",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -95.9,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - BCO DO BRASIL S.A. (0001) Agência: 1607 Conta: 333666-2",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -95.23,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - ITAÚ UNIBANCO S.A. (0341) Agência: 332 Conta: 81010-0",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -94.59,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - BCO DO BRASIL S.A. (0001) Agência: 1607 Conta: 333666-2",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -93.89,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - ITAÚ UNIBANCO S.A. (0341) Agência: 332 Conta: 81010-0",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": -76.6,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - ITAÚ UNIBANCO S.A. (0341) Agência: 332 Conta: 81010-0",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": 206.5,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-01-06",
+      "amount": 4941.27,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-01-07",
+      "amount": 1789.78,
+      "entity": "Resgate RDB",
+      "description": "Resgate RDB",
+      "category": "Investimentos (resgate)",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": -852.92,
+      "entity": "BANCO C6 S.A.",
+      "description": "Pagamento de boleto efetuado - BANCO C6 S.A.",
+      "category": "Boletos / outros",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": -505.69,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": -149.37,
+      "entity": "CIA ESTADUAL DE DISTRIBUICAO DE",
+      "description": "Transferência enviada pelo Pix - CIA ESTADUAL DE DISTRIBUICAO DE - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": -129.9,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - CCLA SUL CATARINENSE Agência: 3074 Conta: 80460-6",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": -114.42,
+      "entity": "CIA RIOGRANDENSE DE SANEAMENTO C",
+      "description": "Transferência enviada pelo Pix - CIA RIOGRANDENSE DE SANEAMENTO C - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": -97.0,
+      "entity": "Aplicação RDB",
+      "description": "Aplicação RDB",
+      "category": "Investimentos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": -65.0,
+      "entity": "TELEFONICA BRASIL S A",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRASIL S A  - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": 343.56,
+      "entity": "BRUNA SILVEIRA SCOPEL",
+      "description": "Transferência recebida pelo Pix - BRUNA SILVEIRA SCOPEL - •••.299.080-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 593779891-7",
+      "category": "Transferências recebidas",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-01-14",
+      "amount": -327.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-14",
+      "amount": -252.0,
+      "entity": "Mateus Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Mateus Silveira Scopel - •••.531.520-•• - Nubank (0260) Agência: 1 Conta: 37369965-8",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-14",
+      "amount": 213.5,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-01-16",
+      "amount": -878.74,
+      "entity": "Edison Renato Kirsten",
+      "description": "Pagamento de boleto efetuado - Edison Renato Kirsten",
+      "category": "Boletos / outros",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-16",
+      "amount": -779.19,
+      "entity": "Edison Renato Kirsten",
+      "description": "Pagamento de boleto efetuado - Edison Renato Kirsten",
+      "category": "Boletos / outros",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-16",
+      "amount": -271.06,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-17",
+      "amount": -52.75,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-17",
+      "amount": -3.99,
+      "entity": "Posto Marco Zero",
+      "description": "Compra no débito - Posto Marco Zero",
+      "category": "Combustível",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-21",
+      "amount": -224.03,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-21",
+      "amount": -66.47,
+      "entity": "TELEFONICA BRASIL S A",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRASIL S A  - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-24",
+      "amount": -539.13,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-27",
+      "amount": -100.0,
+      "entity": "PRIME FIT ACADEMIA",
+      "description": "Transferência enviada pelo Pix - PRIME FIT ACADEMIA - 41.882.472/0001-00 - COOP SICREDI ORIGENS RS Agência: 116 Conta: 64109-3",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-01-30",
+      "amount": -4.0,
+      "entity": "TABATA MARTINEZ PERES DA SILVA",
+      "description": "Transferência enviada pelo Pix - TABATA MARTINEZ PERES DA SILVA - •••.626.860-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 456 Conta: 1288000000811546836-1",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-04",
+      "amount": 22.0,
+      "entity": "FERNANDO ROMUALDO OLIVEIRA",
+      "description": "Transferência recebida pelo Pix - FERNANDO ROMUALDO OLIVEIRA - •••.587.450-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 506 Conta: 816792407-4",
+      "category": "Transferências recebidas",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-02-06",
+      "amount": -504.41,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-06",
+      "amount": 5458.51,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-02-07",
+      "amount": 12.0,
+      "entity": "MATHEUS DE AQUINO CUBA",
+      "description": "Transferência recebida pelo Pix - MATHEUS DE AQUINO CUBA - •••.774.220-•• - BCO C6 S.A. (0336) Agência: 1 Conta: 35356797-3",
+      "category": "Transferências recebidas",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-02-10",
+      "amount": -1500.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-11",
+      "amount": -1500.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-11",
+      "amount": -394.15,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-11",
+      "amount": 1500.0,
+      "entity": "Reembolso recebido pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAME",
+      "description": "Reembolso recebido pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Outras entradas",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-02-12",
+      "amount": -55.0,
+      "entity": "Mp *Arcoflecha",
+      "description": "Compra no débito - Mp *Arcoflecha",
+      "category": "Compras débito",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-13",
+      "amount": -148.95,
+      "entity": "CIA RIOGRANDENSE DE SANEAMENTO C",
+      "description": "Transferência enviada pelo Pix - CIA RIOGRANDENSE DE SANEAMENTO C - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-15",
+      "amount": -582.69,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-15",
+      "amount": -130.13,
+      "entity": "CIA ESTADUAL DE DISTRIBUICAO DE",
+      "description": "Transferência enviada pelo Pix - CIA ESTADUAL DE DISTRIBUICAO DE - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-15",
+      "amount": -65.0,
+      "entity": "TELEFONICA BRASIL S A",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRASIL S A  - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-02-24",
+      "amount": -803.33,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-10",
+      "amount": -324.19,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-10",
+      "amount": -204.85,
+      "entity": "CIA ESTADUAL DE DISTRIBUICAO DE",
+      "description": "Transferência enviada pelo Pix - CIA ESTADUAL DE DISTRIBUICAO DE - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-10",
+      "amount": -113.54,
+      "entity": "CIA RIOGRANDENSE DE SANEAMENTO C",
+      "description": "Transferência enviada pelo Pix - CIA RIOGRANDENSE DE SANEAMENTO C - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-11",
+      "amount": -356.56,
+      "entity": "HS ADMINISTRADORA DE CONSORCIOS LTDA",
+      "description": "Pagamento de boleto efetuado - HS ADMINISTRADORA DE CONSORCIOS LTDA",
+      "category": "Boletos / outros",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-11",
+      "amount": -160.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-11",
+      "amount": -30.0,
+      "entity": "Luis Cleber Alves da Rosa",
+      "description": "Transferência enviada pelo Pix - Luis Cleber Alves da Rosa - •••.180.070-•• - MERCADO PAGO IP LTDA. (0323) Agência: 1 Conta: 7095260660-0",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-16",
+      "amount": -2349.12,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-16",
+      "amount": -65.0,
+      "entity": "TELEFONICA BRASIL S A",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRASIL S A  - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-16",
+      "amount": -15.56,
+      "entity": "Adair J Muniz Pereira",
+      "description": "Transferência enviada pelo Pix - Adair J Muniz Pereira - 28.386.194/0001-24 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 20151-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-16",
+      "amount": 6322.37,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-03-21",
+      "amount": -700.0,
+      "entity": "Francisco Junior da Silva",
+      "description": "Transferência enviada pelo Pix - Francisco Junior da Silva - •••.533.280-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1288000000812422984-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-03-23",
+      "amount": 1660.0,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-03-27",
+      "amount": -5.99,
+      "entity": "Adair J Muniz Pereira",
+      "description": "Transferência enviada pelo Pix - Adair J Muniz Pereira - 28.386.194/0001-24 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 20151-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-02",
+      "amount": -12.0,
+      "entity": "Daiane Monticelli Pisoni",
+      "description": "Transferência enviada pelo Pix - Daiane Monticelli Pisoni - •••.588.030-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 67926281-5",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-03",
+      "amount": -1465.02,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-03",
+      "amount": -325.0,
+      "entity": "Rodrigo Ribas Ferreira 01164223003",
+      "description": "Transferência enviada pelo Pix - Rodrigo Ribas Ferreira 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-09",
+      "amount": -100.0,
+      "entity": "Francisco Junior da Silva",
+      "description": "Transferência enviada pelo Pix - Francisco Junior da Silva - •••.533.280-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1288000000812422984-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-10",
+      "amount": -2015.15,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-10",
+      "amount": -700.0,
+      "entity": "Francisco Junior da Silva",
+      "description": "Transferência enviada pelo Pix - Francisco Junior da Silva - •••.533.280-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1288000000812422984-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-10",
+      "amount": -356.34,
+      "entity": "HS ADMINISTRADORA DE CONSORCIOS LTDA",
+      "description": "Pagamento de boleto efetuado - HS ADMINISTRADORA DE CONSORCIOS LTDA",
+      "category": "Boletos / outros",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-10",
+      "amount": -231.4,
+      "entity": "CIA ESTADUAL DE DISTRIBUICAO DE",
+      "description": "Transferência enviada pelo Pix - CIA ESTADUAL DE DISTRIBUICAO DE - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-10",
+      "amount": -126.77,
+      "entity": "CIA RIOGRANDENSE DE SANEAMENTO C",
+      "description": "Transferência enviada pelo Pix - CIA RIOGRANDENSE DE SANEAMENTO C - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-10",
+      "amount": -65.0,
+      "entity": "TELEFONICA BRASIL S A",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRASIL S A  - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-10",
+      "amount": 5938.35,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-04-11",
+      "amount": -132.53,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - CCLA SUL CATARINENSE Agência: 3074 Conta: 80460-6",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-12",
+      "amount": -528.15,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-16",
+      "amount": -100.0,
+      "entity": "RODRIGO ROCHA DE JESUS 91847010059",
+      "description": "Transferência enviada pelo Pix - RODRIGO ROCHA DE JESUS 91847010059 - 18.514.795/0001-11 - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1292000000577306443-6",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-22",
+      "amount": -90.0,
+      "entity": "Claudia Steyer Ribas Rosa",
+      "description": "Transferência enviada pelo Pix - Claudia Steyer Ribas Rosa - •••.654.390-•• - Nubank (0260) Agência: 1 Conta: 26294083-5",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-23",
+      "amount": -375.0,
+      "entity": "Matheus Vargas Fraga",
+      "description": "Transferência enviada pelo Pix - Matheus Vargas Fraga - •••.177.130-•• - PICPAY (0380) Agência: 1 Conta: 70883819-7",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-04-25",
+      "amount": 50.0,
+      "entity": "Luis Gustavo Missel da Rosa",
+      "description": "Transferência Recebida - Luis Gustavo Missel da Rosa - •••.435.980-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 44744634-0",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-04-29",
+      "amount": -1315.8,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-07",
+      "amount": -300.0,
+      "entity": "Erani Placido da Rosa",
+      "description": "Transferência enviada pelo Pix - Erani Placido da Rosa - •••.179.310-•• - ITAÚ UNIBANCO S.A. (0341) Agência: 7445 Conta: 10141-8",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-10",
+      "amount": -166.28,
+      "entity": "CIA ESTADUAL DE DISTRIBUICAO DE",
+      "description": "Transferência enviada pelo Pix - CIA ESTADUAL DE DISTRIBUICAO DE - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-10",
+      "amount": -132.61,
+      "entity": "CIA RIOGRANDENSE DE SANEAMENTO C",
+      "description": "Transferência enviada pelo Pix - CIA RIOGRANDENSE DE SANEAMENTO C - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-10",
+      "amount": -65.0,
+      "entity": "TELEFONICA BRASIL S A",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRASIL S A  - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-11",
+      "amount": -2000.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-19",
+      "amount": 4328.28,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-05-27",
+      "amount": -420.0,
+      "entity": "Brenda Rocha Luz",
+      "description": "Transferência enviada pelo Pix - Brenda Rocha Luz - •••.775.790-•• - Nubank (0260) Agência: 1 Conta: 3419917-0",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-28",
+      "amount": -2573.05,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-28",
+      "amount": -142.34,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-28",
+      "amount": -141.22,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-28",
+      "amount": -98.43,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-05-31",
+      "amount": 3000.0,
+      "entity": "LIDERA SOLUCOES LTDA",
+      "description": "Transferência Recebida - LIDERA SOLUCOES LTDA - 60.402.093/0001-02 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 771127170-6",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-06-03",
+      "amount": -100.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-08",
+      "amount": -209.72,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-08",
+      "amount": -155.27,
+      "entity": "CIA ESTADUAL DE DISTRIBUICAO DE",
+      "description": "Transferência enviada pelo Pix - CIA ESTADUAL DE DISTRIBUICAO DE - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-08",
+      "amount": -129.9,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - CCLA SUL CATARINENSE Agência: 3074 Conta: 80460-6",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-08",
+      "amount": -108.01,
+      "entity": "CIA RIOGRANDENSE DE SANEAMENTO C",
+      "description": "Transferência enviada pelo Pix - CIA RIOGRANDENSE DE SANEAMENTO C - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Serviços (luz/água)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-08",
+      "amount": -92.78,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-08",
+      "amount": -81.9,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - ITAÚ UNIBANCO S.A. (0341) Agência: 332 Conta: 81010-0",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-09",
+      "amount": -4.0,
+      "entity": "Eduardo de Oliveira Lameiro",
+      "description": "Transferência enviada pelo Pix - Eduardo de Oliveira Lameiro - •••.266.170-•• - Nubank (0260) Agência: 1 Conta: 14674240-0",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-26",
+      "amount": -1000.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-06-30",
+      "amount": -1000.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-06",
+      "amount": -1000.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": -773.99,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": -300.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": -185.08,
+      "entity": "COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA",
+      "description": "Transferência enviada pelo Pix - COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA - CEEE-D - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": -121.8,
+      "entity": "COMPANHIA RIOGRANDENSE DE SANEAMENTO",
+      "description": "Transferência enviada pelo Pix - COMPANHIA RIOGRANDENSE DE SANEAMENTO - CORSAN - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": -105.0,
+      "entity": "DF Sports",
+      "description": "Transferência enviada pelo Pix - DF Sports - 49.916.852/0001-12 - QI Sociedade de Credito Direto S.A. (0329) Agência: 1 Conta: 1627044-8",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": -92.78,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": -90.0,
+      "entity": "Transferência enviada pelo Pix - Bruna Silveira Scopel (Transferência enviada)",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel (Transferência enviada)",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-07",
+      "amount": 6800.0,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-07-22",
+      "amount": -3451.03,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-29",
+      "amount": -1000.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-31",
+      "amount": -1451.23,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-31",
+      "amount": -688.37,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-31",
+      "amount": -504.31,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-07-31",
+      "amount": 528.69,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-07-31",
+      "amount": 1000.0,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-08-08",
+      "amount": 2459.72,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-08-12",
+      "amount": -109.27,
+      "entity": "DETRAN/RS",
+      "description": "Transferência enviada pelo Pix - DETRAN/RS - 01.935.819/0001-03 - Banco do Estado do Rio Grande do Sul (0041) Agência: 10 Conta: 50000007-4",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-14",
+      "amount": -105.0,
+      "entity": "DF Sports",
+      "description": "Transferência enviada pelo Pix - DF Sports - 49.916.852/0001-12 - QI Sociedade de Credito Direto S.A. (0329) Agência: 1 Conta: 1627044-8",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-15",
+      "amount": -5000.0,
+      "entity": "Aplicação RDB",
+      "description": "Aplicação RDB",
+      "category": "Investimentos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-15",
+      "amount": -121.8,
+      "entity": "COMPANHIA RIOGRANDENSE DE SANEAMENTO",
+      "description": "Transferência enviada pelo Pix - COMPANHIA RIOGRANDENSE DE SANEAMENTO - CORSAN - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-15",
+      "amount": -113.54,
+      "entity": "SUSTENTABILIDADE EM",
+      "description": "Transferência enviada pelo Pix - SUSTENTABILIDADE EM - 62.188.874/0001-71 - BANCO INTER (0077) Agência: 1 Conta: 46979555-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-15",
+      "amount": 10000.0,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-08-17",
+      "amount": -40.0,
+      "entity": "Sonho'S House Ltda",
+      "description": "Transferência enviada pelo Pix - Sonho'S House Ltda - 49.582.498/0001-37 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 90586283-2",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-20",
+      "amount": -9.98,
+      "entity": "POSTO MARCO ZERO LTDA",
+      "description": "Compra no débito - POSTO MARCO ZERO LTDA",
+      "category": "Combustível",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-22",
+      "amount": -4.99,
+      "entity": "PANVEL FARMACIAS",
+      "description": "Compra no débito - PANVEL FARMACIAS",
+      "category": "Compras débito",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-25",
+      "amount": -129.9,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - CCLA SUL CATARINENSE Agência: 3074 Conta: 80460-6",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-27",
+      "amount": -120.0,
+      "entity": "SIDNEI COLLIONI DOS SANTOS",
+      "description": "Transferência enviada pelo Pix - SIDNEI COLLIONI DOS SANTOS - •••.394.290-•• - Banco do Estado do Rio Grande do Sul (0041) Agência: 822 Conta: 350930130-8",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-27",
+      "amount": -60.0,
+      "entity": "Danrlei dos Santos Ferreira",
+      "description": "Transferência enviada pelo Pix - Danrlei dos Santos Ferreira - •••.902.040-•• - Nubank (0260) Agência: 1 Conta: 9897723-1",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-29",
+      "amount": -70.0,
+      "entity": "JOSE FERNANDO BORBA DOS SANTOS 02102071081",
+      "description": "Transferência enviada pelo Pix - JOSE FERNANDO BORBA DOS SANTOS 02102071081 - 42.874.823/0001-96 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 49805-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-30",
+      "amount": -69.9,
+      "entity": "Rancho1238",
+      "description": "Compra no débito - Rancho1238",
+      "category": "Compras débito",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -3783.28,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -207.21,
+      "entity": "COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA",
+      "description": "Transferência enviada pelo Pix - COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA - CEEE-D - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -129.9,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - CCLA SUL CATARINENSE Agência: 3074 Conta: 80460-6",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -113.54,
+      "entity": "COMPANHIA RIOGRANDENSE DE SANEAMENTO",
+      "description": "Transferência enviada pelo Pix - COMPANHIA RIOGRANDENSE DE SANEAMENTO - CORSAN - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -105.0,
+      "entity": "DF Sports",
+      "description": "Transferência enviada pelo Pix - DF Sports - 49.916.852/0001-12 - QI Sociedade de Credito Direto S.A. (0329) Agência: 1 Conta: 1627044-8",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -98.35,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -92.78,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -92.78,
+      "entity": "MUNICIPIO DE SANTO ANTONIO DA PATRULHA",
+      "description": "Transferência enviada pelo Pix - MUNICIPIO DE SANTO ANTONIO DA PATRULHA - 88.814.199/0001-32 - BCO DO BRASIL S.A. (0001) Agência: 369 Conta: 15534-9",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -85.97,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - BCO DO BRASIL S.A. (0001) Agência: 1607 Conta: 333666-2",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -81.9,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - BCO DO BRASIL S.A. (0001) Agência: 1607 Conta: 333666-2",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-08-31",
+      "amount": -71.71,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-01",
+      "amount": -10.0,
+      "entity": "CARLOS ANDRE SELISTRE PORCHER",
+      "description": "Transferência enviada pelo Pix - CARLOS ANDRE SELISTRE PORCHER - •••.614.180-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 3701000000586529922-7",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-02",
+      "amount": -350.0,
+      "entity": "BRUNA SILVEIRA SCOPEL",
+      "description": "Transferência enviada pelo Pix - BRUNA SILVEIRA SCOPEL - •••.299.080-•• - BANCO INTER (0077) Agência: 1 Conta: 4008610-0",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-14",
+      "amount": -327.6,
+      "entity": "RECEITA FEDERAL",
+      "description": "Transferência enviada pelo Pix - RECEITA FEDERAL - 00.394.460/0058-87 - ITAÚ UNIBANCO S.A. (0341) Agência: 332 Conta: 81010-0",
+      "category": "Impostos",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-14",
+      "amount": -226.55,
+      "entity": "COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA",
+      "description": "Transferência enviada pelo Pix - COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA - CEEE-D - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-14",
+      "amount": -129.9,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - CCLA SUL CATARINENSE Agência: 3074 Conta: 80460-6",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-14",
+      "amount": -71.68,
+      "entity": "Transferência enviada pelo Pix via Open Banking - Iniciada por: Vivo em Dia - TE",
+      "description": "Transferência enviada pelo Pix via Open Banking - Iniciada por: Vivo em Dia - TELEFONICA BRASIL S.A. - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-22",
+      "amount": -2000.0,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-22",
+      "amount": -958.61,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-22",
+      "amount": 1000.0,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-09-22",
+      "amount": 1738.63,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-09-24",
+      "amount": -90.0,
+      "entity": "ROSELAINE DE LIMA THEREZA",
+      "description": "Transferência enviada pelo Pix - ROSELAINE DE LIMA THEREZA - •••.061.790-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1288000000811357846-1",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-27",
+      "amount": -45.0,
+      "entity": "JOAO CARLOS NUNES PORTAL",
+      "description": "Transferência enviada pelo Pix - JOAO CARLOS NUNES PORTAL - •••.010.780-•• - BCO AGIBANK S.A. (0121) Agência: 1 Conta: 1210576-7",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-09-28",
+      "amount": -21.37,
+      "entity": "Adair J Muniz Pereira",
+      "description": "Transferência enviada pelo Pix - Adair J Muniz Pereira - 28.386.194/0001-24 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 20151-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-01",
+      "amount": -50.0,
+      "entity": "KEYCLUB",
+      "description": "Transferência enviada pelo Pix - KEYCLUB - 57.573.285/0001-77 - 7TRUST FINANCE IP S.A. Agência: 1 Conta: 1111-0",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-05",
+      "amount": -819.13,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-05",
+      "amount": -255.36,
+      "entity": "COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA",
+      "description": "Transferência enviada pelo Pix - COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA - CEEE-D - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-05",
+      "amount": -132.18,
+      "entity": "COMPANHIA RIOGRANDENSE DE SANEAMENTO",
+      "description": "Transferência enviada pelo Pix - COMPANHIA RIOGRANDENSE DE SANEAMENTO - CORSAN - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-05",
+      "amount": -107.29,
+      "entity": "BANCO INTER S A",
+      "description": "Transferência enviada pelo Pix - BANCO INTER S A - 00.416.968/0001-01 - BANCO INTER (0077) Agência: 1 Conta: 9235768-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-05",
+      "amount": -105.0,
+      "entity": "DF Sports",
+      "description": "Transferência enviada pelo Pix - DF Sports - 49.916.852/0001-12 - QI Sociedade de Credito Direto S.A. (0329) Agência: 1 Conta: 1627044-8",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-05",
+      "amount": 14198.3,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-10-06",
+      "amount": -80.0,
+      "entity": "ELTON FELIPE BARTH",
+      "description": "Transferência enviada pelo Pix - ELTON FELIPE BARTH - •••.158.200-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 3701000000584483493-0",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-07",
+      "amount": -60.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-09",
+      "amount": -191.36,
+      "entity": "A LENHA PIZZARIA SANTO",
+      "description": "Compra no débito - A LENHA PIZZARIA SANTO",
+      "category": "Compras débito",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-12",
+      "amount": -40.95,
+      "entity": "Adair J Muniz Pereira",
+      "description": "Transferência enviada pelo Pix - Adair J Muniz Pereira - 28.386.194/0001-24 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 20151-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-13",
+      "amount": -13.97,
+      "entity": "PANVEL FARMACIAS",
+      "description": "Compra no débito - PANVEL FARMACIAS",
+      "category": "Compras débito",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-13",
+      "amount": 1000.0,
+      "entity": "LIDERA SOLUCOES LTDA",
+      "description": "Transferência Recebida - LIDERA SOLUCOES LTDA - 60.402.093/0001-02 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 771127170-6",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-10-14",
+      "amount": -3000.0,
+      "entity": "AVENUE SECURITIES DTVM LTDA.",
+      "description": "Transferência enviada pelo Pix - AVENUE SECURITIES DTVM LTDA. - 61.384.004/0001-05 - ITAÚ UNIBANCO S.A. (0341) Agência: 2937 Conta: 25653-1",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-15",
+      "amount": -800.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-15",
+      "amount": -90.0,
+      "entity": "ROSELAINE DE LIMA THEREZA",
+      "description": "Transferência enviada pelo Pix - ROSELAINE DE LIMA THEREZA - •••.061.790-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1288000000811357846-1",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-17",
+      "amount": -150.0,
+      "entity": "CARMEM ASSIS DA CUNHA",
+      "description": "Transferência enviada pelo Pix - CARMEM ASSIS DA CUNHA - •••.070.550-•• - Banco do Estado do Rio Grande do Sul (0041) Agência: 822 Conta: 390752120-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-17",
+      "amount": -5.0,
+      "entity": "GUSTAVO MUNIZ DA SILVA",
+      "description": "Transferência enviada pelo Pix - GUSTAVO MUNIZ DA SILVA - •••.229.420-•• - BANCO INTER (0077) Agência: 1 Conta: 48417242-5",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-10-31",
+      "amount": -3651.19,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-01",
+      "amount": -18.0,
+      "entity": "BENICIO SCOPEL FERREIRA",
+      "description": "Transferência enviada pelo Pix - BENICIO SCOPEL FERREIRA - •••.727.540-•• - BANCO INTER (0077) Agência: 1 Conta: 22987176-3",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-03",
+      "amount": -384.0,
+      "entity": "BANCO INTER S A",
+      "description": "Transferência enviada pelo Pix - BANCO INTER S A - 00.416.968/0001-01 - BANCO INTER (0077) Agência: 1 Conta: 9235768-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-03",
+      "amount": -228.82,
+      "entity": "COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA",
+      "description": "Transferência enviada pelo Pix - COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA - CEEE-D - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-03",
+      "amount": -129.9,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - CCLA SUL CATARINENSE Agência: 3074 Conta: 80460-6",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-03",
+      "amount": -121.8,
+      "entity": "COMPANHIA RIOGRANDENSE DE SANEAMENTO",
+      "description": "Transferência enviada pelo Pix - COMPANHIA RIOGRANDENSE DE SANEAMENTO - CORSAN - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-03",
+      "amount": -105.0,
+      "entity": "Danrlei Dos Santos Ferreira",
+      "description": "Transferência enviada pelo Pix - Danrlei Dos Santos Ferreira - •••.902.040-•• - PICPAY (0380) Agência: 1 Conta: 73051619-9",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-03",
+      "amount": -70.0,
+      "entity": "TELEFONICA BRAS",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRAS - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-05",
+      "amount": -28.0,
+      "entity": "GABRIELLE DIEDRICH DE SOUZA",
+      "description": "Transferência enviada pelo Pix - GABRIELLE DIEDRICH DE SOUZA - •••.428.940-•• - BANCO INTER (0077) Agência: 1 Conta: 27795868-7",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-06",
+      "amount": -851.39,
+      "entity": "BANCO C6 S.A.",
+      "description": "Pagamento de boleto efetuado - BANCO C6 S.A.",
+      "category": "Boletos / outros",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-07",
+      "amount": 851.39,
+      "entity": "BRUNA SILVEIRA SCOPEL",
+      "description": "Transferência recebida pelo Pix - BRUNA SILVEIRA SCOPEL - •••.299.080-•• - BANCO INTER (0077) Agência: 1 Conta: 4008610-0",
+      "category": "Transferências recebidas",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-11-10",
+      "amount": -62.0,
+      "entity": "Carolina Candido Cardoso",
+      "description": "Transferência enviada pelo Pix - Carolina Candido Cardoso - •••.382.390-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 11056259-5",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-12",
+      "amount": -90.0,
+      "entity": "BRUNA SILVEIRA SCOPEL",
+      "description": "Transferência enviada pelo Pix - BRUNA SILVEIRA SCOPEL - •••.299.080-•• - BANCO INTER (0077) Agência: 1 Conta: 4008610-0",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-16",
+      "amount": -70.0,
+      "entity": "TELEFONICA BRAS",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRAS - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-17",
+      "amount": 52.98,
+      "entity": "LIDERA SOLUCOES LTDA",
+      "description": "Transferência Recebida - LIDERA SOLUCOES LTDA - 60.402.093/0001-02 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 771127170-6",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-11-19",
+      "amount": -17.0,
+      "entity": "62.288.282 Nalu Maria Scheffer De Matos",
+      "description": "Transferência enviada pelo Pix - 62.288.282 Nalu Maria Scheffer De Matos - 62.288.282/0001-21 - STONE IP S.A. (0197) Agência: 1 Conta: 97185109-2",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-26",
+      "amount": -49.8,
+      "entity": "HORTIFRUTI BOM GOSTO LTDA",
+      "description": "Transferência enviada pelo Pix - HORTIFRUTI BOM GOSTO LTDA  - 17.746.331/0001-78 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 455-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-11-26",
+      "amount": 52.58,
+      "entity": "BRUNA SILVEIRA SCOPEL",
+      "description": "Transferência recebida pelo Pix - BRUNA SILVEIRA SCOPEL - •••.299.080-•• - BANCO INTER (0077) Agência: 1 Conta: 4008610-0",
+      "category": "Transferências recebidas",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-11-27",
+      "amount": -90.0,
+      "entity": "ROSELAINE DE LIMA THEREZA",
+      "description": "Transferência enviada pelo Pix - ROSELAINE DE LIMA THEREZA - •••.061.790-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1288000000811357846-1",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-02",
+      "amount": -54.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-02",
+      "amount": -6.0,
+      "entity": "Bruna Silveira Scopel",
+      "description": "Transferência enviada pelo Pix - Bruna Silveira Scopel - •••.299.080-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 2641768-6",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-09",
+      "amount": -3627.19,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-10",
+      "amount": -129.9,
+      "entity": "TEL3 TELECOM",
+      "description": "Transferência enviada pelo Pix - TEL3 TELECOM - 40.944.380/0001-37 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 22295-5",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-10",
+      "amount": 9581.08,
+      "entity": "RODRIGO RIBAS FERREIRA 01164223003",
+      "description": "Transferência Recebida - RODRIGO RIBAS FERREIRA 01164223003 - 38.255.194/0001-49 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 73583292-7",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-12-11",
+      "amount": -90.0,
+      "entity": "ROSELAINE DE LIMA THEREZA",
+      "description": "Transferência enviada pelo Pix - ROSELAINE DE LIMA THEREZA - •••.061.790-•• - CAIXA ECONOMICA FEDERAL (0104) Agência: 703 Conta: 1288000000811357846-1",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-12",
+      "amount": 1733.0,
+      "entity": "LIDERA SOLUCOES LTDA",
+      "description": "Transferência Recebida - LIDERA SOLUCOES LTDA - 60.402.093/0001-02 - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 771127170-6",
+      "category": "Salário / Transferência",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-12-14",
+      "amount": -30.0,
+      "entity": "Danrlei dos Santos Ferreira",
+      "description": "Transferência enviada pelo Pix - Danrlei dos Santos Ferreira - •••.902.040-•• - NU PAGAMENTOS - IP (0260) Agência: 1 Conta: 9897723-1",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-15",
+      "amount": -113.54,
+      "entity": "COMPANHIA RIOGRANDENSE DE SANEAMENTO",
+      "description": "Transferência enviada pelo Pix - COMPANHIA RIOGRANDENSE DE SANEAMENTO - CORSAN - 92.802.784/0001-90 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002497-6",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-17",
+      "amount": -203.97,
+      "entity": "COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA",
+      "description": "Transferência enviada pelo Pix - COMPANHIA ESTADUAL DE DISTRIBUICAO DE ENERGIA ELETRICA - CEEE-D - 08.467.115/0001-00 - Banco Citibank S.A. (0745) Agência: 1 Conta: 9002140-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-17",
+      "amount": -71.77,
+      "entity": "TELEFONICA BRAS",
+      "description": "Transferência enviada pelo Pix - TELEFONICA BRAS - 02.558.157/0001-62 - BCO SANTANDER (BRASIL) S.A. (0033) Agência: 2271 Conta: 13002745-8",
+      "category": "Serviços (telefone)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-19",
+      "amount": -120.0,
+      "entity": "SIDNEI COLLIONI DOS SANTOS",
+      "description": "Transferência enviada pelo Pix - SIDNEI COLLIONI DOS SANTOS - •••.394.290-•• - Banco do Estado do Rio Grande do Sul (0041) Agência: 822 Conta: 350930130-8",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-21",
+      "amount": -62.17,
+      "entity": "Adair J Muniz Pereira",
+      "description": "Transferência enviada pelo Pix - Adair J Muniz Pereira - 28.386.194/0001-24 - COOP SICREDI CAMINHO DAS ÁGUAS RS Agência: 109 Conta: 20151-7",
+      "category": "Transferências PIX / Serviços",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-21",
+      "amount": -27.5,
+      "entity": "MARIA APARECIDA DA CONCEICAO COUGO",
+      "description": "Transferência enviada pelo Pix - MARIA APARECIDA DA CONCEICAO COUGO - •••.999.359-•• - BCO BRADESCO S.A. (0237) Agência: 1665 Conta: 3607-2",
+      "category": "Transferências PIX (pessoal)",
+      "type": "saida"
+    },
+    {
+      "date": "2025-12-22",
+      "amount": 350.0,
+      "entity": "NATHIELE SILVA DOS SANTOS",
+      "description": "Transferência recebida pelo Pix - NATHIELE SILVA DOS SANTOS - •••.025.030-•• - Banco do Estado do Rio Grande do Sul (0041) Agência: 300 Conta: 350664720-3",
+      "category": "Transferências recebidas",
+      "type": "entrada"
+    },
+    {
+      "date": "2025-12-28",
+      "amount": -3618.68,
+      "entity": "Pagamento de fatura",
+      "description": "Pagamento de fatura",
+      "category": "Pagamento cartão",
+      "type": "saida"
+    }
+  ]
+}
