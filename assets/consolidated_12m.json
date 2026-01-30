@@ -1,0 +1,4507 @@
+{
+  "meta": {
+    "period_months": 12,
+    "cutoff_date": "2025-01-20",
+    "max_date": "2026-01-20",
+    "total_expenses": 49632.72,
+    "transaction_count": 899,
+    "unique_entities": 247
+  },
+  "expenses": [
+    {
+      "date": "2025-01-22",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 51.45
+    },
+    {
+      "date": "2025-01-22",
+      "title": "Uber Uber *Trip Help.U",
+      "amount": 8.97
+    },
+    {
+      "date": "2025-01-23",
+      "title": "Buffon",
+      "amount": 61.9
+    },
+    {
+      "date": "2025-01-23",
+      "title": "Pontodoacai",
+      "amount": 63.07
+    },
+    {
+      "date": "2025-01-23",
+      "title": "Ricky Lanches",
+      "amount": 15.0
+    },
+    {
+      "date": "2025-01-23",
+      "title": "Supermerc Gomes",
+      "amount": 57.46
+    },
+    {
+      "date": "2025-01-23",
+      "title": "Via Sul",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-01-24",
+      "title": "Janainacardosodos",
+      "amount": 16.0
+    },
+    {
+      "date": "2025-01-24",
+      "title": "Posto Point",
+      "amount": 45.0
+    },
+    {
+      "date": "2025-01-24",
+      "title": "Via Sul",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-01-24",
+      "title": "Zig*Acqualokos",
+      "amount": 66.5
+    },
+    {
+      "date": "2025-01-25",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 81.48
+    },
+    {
+      "date": "2025-01-25",
+      "title": "Posto Milhas",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-01-28",
+      "title": "Mercado Santo Antonio",
+      "amount": 7.63
+    },
+    {
+      "date": "2025-01-28",
+      "title": "Prime Fit Academia - Parcela 1/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-01-28",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-01-29",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 63.09
+    },
+    {
+      "date": "2025-01-29",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-01-30",
+      "title": "Atacadaco",
+      "amount": 17.0
+    },
+    {
+      "date": "2025-01-30",
+      "title": "Mp *Deliverydaluh",
+      "amount": 21.0
+    },
+    {
+      "date": "2025-01-31",
+      "title": "Lanches Santa Maria",
+      "amount": 58.0
+    },
+    {
+      "date": "2025-01-31",
+      "title": "Pg *Xgrow - Parcela 2/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-01-31",
+      "title": "Posto Marco Zero - Parcela 2/6",
+      "amount": 48.99
+    },
+    {
+      "date": "2025-01-31",
+      "title": "Prime Fit Academia - Parcela 2/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-01-31",
+      "title": "Prime Fit Academia - Parcela 3/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-01-31",
+      "title": "Sim Bage Unipampa",
+      "amount": 15.39
+    },
+    {
+      "date": "2025-01-31",
+      "title": "Ândrei Nunes dos Santos",
+      "amount": 56.58
+    },
+    {
+      "date": "2025-02-01",
+      "title": "Ecomix",
+      "amount": 48.48
+    },
+    {
+      "date": "2025-02-01",
+      "title": "Ecomix - Parcela 1/2",
+      "amount": 37.83
+    },
+    {
+      "date": "2025-02-01",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 91.21
+    },
+    {
+      "date": "2025-02-01",
+      "title": "Mercearia Serrana",
+      "amount": 69.74
+    },
+    {
+      "date": "2025-02-01",
+      "title": "Posto Marco Zero",
+      "amount": 119.8
+    },
+    {
+      "date": "2025-02-01",
+      "title": "Restaurante Vitriny",
+      "amount": 56.5
+    },
+    {
+      "date": "2025-02-01",
+      "title": "Sim Bage Unipampa",
+      "amount": 11.28
+    },
+    {
+      "date": "2025-02-02",
+      "title": "Fruteira Frutasul",
+      "amount": 2.5
+    },
+    {
+      "date": "2025-02-02",
+      "title": "Fruteira Frutasul",
+      "amount": 41.64
+    },
+    {
+      "date": "2025-02-02",
+      "title": "Gabrieli Dutra Camargo",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-02-02",
+      "title": "Pizzaria Gastronomia",
+      "amount": 90.9
+    },
+    {
+      "date": "2025-02-02",
+      "title": "Sim Bage Unipampa",
+      "amount": 21.97
+    },
+    {
+      "date": "2025-02-04",
+      "title": "Supermercado",
+      "amount": 30.74
+    },
+    {
+      "date": "2025-02-04",
+      "title": "Xis do Brutus",
+      "amount": 25.0
+    },
+    {
+      "date": "2025-02-05",
+      "title": "Farmacia Sao Joao",
+      "amount": 9.68
+    },
+    {
+      "date": "2025-02-05",
+      "title": "Gigapastelaria",
+      "amount": 39.0
+    },
+    {
+      "date": "2025-02-05",
+      "title": "Ricky Lanches",
+      "amount": 25.0
+    },
+    {
+      "date": "2025-02-05",
+      "title": "Santa Mordida",
+      "amount": 11.0
+    },
+    {
+      "date": "2025-02-05",
+      "title": "Supermerc Gomes",
+      "amount": 63.93
+    },
+    {
+      "date": "2025-02-06",
+      "title": "Sim Bage Br153",
+      "amount": 15.78
+    },
+    {
+      "date": "2025-02-08",
+      "title": "Google One",
+      "amount": 38.99
+    },
+    {
+      "date": "2025-02-08",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-08",
+      "title": "Supermerc Gomes",
+      "amount": 46.45
+    },
+    {
+      "date": "2025-02-09",
+      "title": "Supermerc Gomes",
+      "amount": 15.55
+    },
+    {
+      "date": "2025-02-10",
+      "title": "Gasbomprincipio",
+      "amount": 124.0
+    },
+    {
+      "date": "2025-02-11",
+      "title": "54686114",
+      "amount": 8.0
+    },
+    {
+      "date": "2025-02-11",
+      "title": "Gemeascel",
+      "amount": 24.9
+    },
+    {
+      "date": "2025-02-11",
+      "title": "Gemeascel",
+      "amount": 109.9
+    },
+    {
+      "date": "2025-02-11",
+      "title": "Mercado Santo Antonio",
+      "amount": 35.57
+    },
+    {
+      "date": "2025-02-11",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-12",
+      "title": "Mercado Santo Antonio",
+      "amount": 33.34
+    },
+    {
+      "date": "2025-02-13",
+      "title": "Mercado Santo Antonio",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-02-13",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-13",
+      "title": "Sao Joao Farmacias",
+      "amount": 15.99
+    },
+    {
+      "date": "2025-02-14",
+      "title": "Bazar Rodrigues",
+      "amount": 50.97
+    },
+    {
+      "date": "2025-02-14",
+      "title": "Janaina Gomes da Silv",
+      "amount": 30.0
+    },
+    {
+      "date": "2025-02-14",
+      "title": "Posto Marco Zero",
+      "amount": 6.99
+    },
+    {
+      "date": "2025-02-14",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-14",
+      "title": "Supermerc Gomes",
+      "amount": 225.22
+    },
+    {
+      "date": "2025-02-15",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 54.23
+    },
+    {
+      "date": "2025-02-15",
+      "title": "Ricky Lanches",
+      "amount": 63.0
+    },
+    {
+      "date": "2025-02-15",
+      "title": "Uber Uber *Trip Help.U",
+      "amount": 6.96
+    },
+    {
+      "date": "2025-02-17",
+      "title": "Adair J Muniz Pereira",
+      "amount": 52.73
+    },
+    {
+      "date": "2025-02-17",
+      "title": "Posto Milhas",
+      "amount": 100.0
+    },
+    {
+      "date": "2025-02-19",
+      "title": "Disom",
+      "amount": 26.9
+    },
+    {
+      "date": "2025-02-19",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 5.84
+    },
+    {
+      "date": "2025-02-19",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 38.62
+    },
+    {
+      "date": "2025-02-19",
+      "title": "Xis do Brutus",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-20",
+      "title": "Padaria e Confeitaria",
+      "amount": 8.5
+    },
+    {
+      "date": "2025-02-20",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-20",
+      "title": "Xbeleza",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-02-21",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 100.0
+    },
+    {
+      "date": "2025-02-21",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-22",
+      "title": "Gionane Nunes",
+      "amount": 5.48
+    },
+    {
+      "date": "2025-02-22",
+      "title": "Life Farmacia",
+      "amount": 23.9
+    },
+    {
+      "date": "2025-02-23",
+      "title": "Via Sul",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Alr Conpany",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Cafesalaodeatos",
+      "amount": 8.0
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Cafesalaodeatos",
+      "amount": 10.0
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Intervalo",
+      "amount": 50.9
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Pb Estacionamentos",
+      "amount": 55.0
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Rissul Fl",
+      "amount": 12.96
+    },
+    {
+      "date": "2025-02-24",
+      "title": "Via Sul",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-02-25",
+      "title": "Mercado Santo Antonio",
+      "amount": 13.18
+    },
+    {
+      "date": "2025-02-25",
+      "title": "Mercado Santo Antonio",
+      "amount": 38.83
+    },
+    {
+      "date": "2025-02-25",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 47.11
+    },
+    {
+      "date": "2025-02-25",
+      "title": "Ricky Lanches",
+      "amount": 39.0
+    },
+    {
+      "date": "2025-02-26",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 41.17
+    },
+    {
+      "date": "2025-02-26",
+      "title": "Posto Marco Zero",
+      "amount": 61.9
+    },
+    {
+      "date": "2025-02-26",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-26",
+      "title": "Xis da Caca",
+      "amount": 21.0
+    },
+    {
+      "date": "2025-02-27",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-02-27",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Ecomix - Parcela 2/2",
+      "amount": 37.82
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Mini*Mercado",
+      "amount": 5.29
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Pg *Xgrow - Parcela 3/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Posto Marco Zero - Parcela 3/6",
+      "amount": 48.99
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Prime Fit Academia - Parcela 3/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Prime Fit Academia - Parcela 4/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 61.9
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Supermerc Gomes",
+      "amount": 7.2
+    },
+    {
+      "date": "2025-02-28",
+      "title": "Via Sul",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-03-01",
+      "title": "Gabriellorensi",
+      "amount": 14.94
+    },
+    {
+      "date": "2025-03-01",
+      "title": "Normadaiane",
+      "amount": 8.0
+    },
+    {
+      "date": "2025-03-01",
+      "title": "Normadaiane",
+      "amount": 26.0
+    },
+    {
+      "date": "2025-03-01",
+      "title": "Postos Mundo Novo Fl",
+      "amount": 12.0
+    },
+    {
+      "date": "2025-03-01",
+      "title": "Tortaria Baum",
+      "amount": 43.8
+    },
+    {
+      "date": "2025-03-02",
+      "title": "Gcsaraiva Engenharia",
+      "amount": 34.0
+    },
+    {
+      "date": "2025-03-02",
+      "title": "Pastelaria Dudabella",
+      "amount": 12.0
+    },
+    {
+      "date": "2025-03-03",
+      "title": "Agouqueosoriense",
+      "amount": 99.0
+    },
+    {
+      "date": "2025-03-04",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 13.05
+    },
+    {
+      "date": "2025-03-04",
+      "title": "Mercado Santo Antonio",
+      "amount": 52.23
+    },
+    {
+      "date": "2025-03-05",
+      "title": "Boa Viagem",
+      "amount": 62.9
+    },
+    {
+      "date": "2025-03-05",
+      "title": "Cremolatto Santo Anton",
+      "amount": 51.98
+    },
+    {
+      "date": "2025-03-06",
+      "title": "Supermerc Gomes",
+      "amount": 280.44
+    },
+    {
+      "date": "2025-03-07",
+      "title": "Google One",
+      "amount": 38.99
+    },
+    {
+      "date": "2025-03-07",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 111.73
+    },
+    {
+      "date": "2025-03-07",
+      "title": "Macrobala Distribuidor",
+      "amount": 10.92
+    },
+    {
+      "date": "2025-03-07",
+      "title": "Saldo em rotativo",
+      "amount": 324.18
+    },
+    {
+      "date": "2025-03-08",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 42.67
+    },
+    {
+      "date": "2025-03-08",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 13.68
+    },
+    {
+      "date": "2025-03-08",
+      "title": "Posto Marco Zero",
+      "amount": 100.0
+    },
+    {
+      "date": "2025-03-08",
+      "title": "Pratica Agropecuaria",
+      "amount": 53.49
+    },
+    {
+      "date": "2025-03-10",
+      "title": "IOF de rotativo",
+      "amount": 2.06
+    },
+    {
+      "date": "2025-03-10",
+      "title": "Juros de dívida encerrada",
+      "amount": 6.8
+    },
+    {
+      "date": "2025-03-10",
+      "title": "Juros de rotativo",
+      "amount": 4.74
+    },
+    {
+      "date": "2025-03-10",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 45.57
+    },
+    {
+      "date": "2025-03-10",
+      "title": "Xbeleza",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-03-11",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 8.99
+    },
+    {
+      "date": "2025-03-12",
+      "title": "Fernandes Fernandes e",
+      "amount": 35.39
+    },
+    {
+      "date": "2025-03-12",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 34.41
+    },
+    {
+      "date": "2025-03-12",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-13",
+      "title": "Bazar Rodrigues",
+      "amount": 9.99
+    },
+    {
+      "date": "2025-03-13",
+      "title": "Lojas Americanas",
+      "amount": 2.79
+    },
+    {
+      "date": "2025-03-13",
+      "title": "X do Brutus Restauran",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-14",
+      "title": "Farmacia Sao Joao",
+      "amount": 29.9
+    },
+    {
+      "date": "2025-03-14",
+      "title": "Mercado Santo Antonio",
+      "amount": 3.29
+    },
+    {
+      "date": "2025-03-14",
+      "title": "Mercado Santo Antonio",
+      "amount": 13.5
+    },
+    {
+      "date": "2025-03-14",
+      "title": "Posto Marco Zero",
+      "amount": 125.0
+    },
+    {
+      "date": "2025-03-14",
+      "title": "Ricky Lanches",
+      "amount": 40.5
+    },
+    {
+      "date": "2025-03-15",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-15",
+      "title": "Supermerc Gomes",
+      "amount": 144.72
+    },
+    {
+      "date": "2025-03-17",
+      "title": "Farmacia Sao Joao",
+      "amount": 16.89
+    },
+    {
+      "date": "2025-03-17",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 17.02
+    },
+    {
+      "date": "2025-03-18",
+      "title": "Joicesabrina",
+      "amount": 46.97
+    },
+    {
+      "date": "2025-03-18",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-18",
+      "title": "Supermerc Gomes",
+      "amount": 16.87
+    },
+    {
+      "date": "2025-03-19",
+      "title": "Carlos Henrique R de S",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-19",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 73.58
+    },
+    {
+      "date": "2025-03-20",
+      "title": "Boa Viagem",
+      "amount": 123.0
+    },
+    {
+      "date": "2025-03-20",
+      "title": "Mercado Santo Antonio",
+      "amount": 3.29
+    },
+    {
+      "date": "2025-03-20",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 22.47
+    },
+    {
+      "date": "2025-03-20",
+      "title": "Ricky Lanches",
+      "amount": 47.0
+    },
+    {
+      "date": "2025-03-21",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-21",
+      "title": "Supermerc Gomes",
+      "amount": 10.89
+    },
+    {
+      "date": "2025-03-21",
+      "title": "Supermerc Gomes",
+      "amount": 16.14
+    },
+    {
+      "date": "2025-03-22",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-03-22",
+      "title": "Cristianenunes",
+      "amount": 70.74
+    },
+    {
+      "date": "2025-03-22",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 47.2
+    },
+    {
+      "date": "2025-03-22",
+      "title": "Ricky Lanches",
+      "amount": 40.0
+    },
+    {
+      "date": "2025-03-22",
+      "title": "Via Sul",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-03-25",
+      "title": "Fernandes Fernandes e",
+      "amount": 28.87
+    },
+    {
+      "date": "2025-03-25",
+      "title": "Google Gsuite_ribasrod",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-03-25",
+      "title": "Mercado Santo Antonio",
+      "amount": 40.65
+    },
+    {
+      "date": "2025-03-25",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-26",
+      "title": "IOF de \"One.Com\"",
+      "amount": 1.6
+    },
+    {
+      "date": "2025-03-26",
+      "title": "Mercado Santo Antonio",
+      "amount": 6.99
+    },
+    {
+      "date": "2025-03-26",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 33.74
+    },
+    {
+      "date": "2025-03-26",
+      "title": "One.Com",
+      "amount": 47.36
+    },
+    {
+      "date": "2025-03-26",
+      "title": "Posto Milhas",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-03-26",
+      "title": "Ricky Lanches",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-03-27",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-27",
+      "title": "Supermerc Gomes",
+      "amount": 47.11
+    },
+    {
+      "date": "2025-03-28",
+      "title": "Joao D Avila da Silva",
+      "amount": 2.5
+    },
+    {
+      "date": "2025-03-28",
+      "title": "Mercado Santo Antonio",
+      "amount": 16.47
+    },
+    {
+      "date": "2025-03-28",
+      "title": "Padariasanta",
+      "amount": 9.3
+    },
+    {
+      "date": "2025-03-28",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-03-28",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-29",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 7.56
+    },
+    {
+      "date": "2025-03-29",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-03-29",
+      "title": "Supermerc Gomes",
+      "amount": 113.99
+    },
+    {
+      "date": "2025-03-30",
+      "title": "Minhocaburger",
+      "amount": 52.0
+    },
+    {
+      "date": "2025-03-30",
+      "title": "Posto Milhas",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-03-30",
+      "title": "Supermerc Gomes",
+      "amount": 81.19
+    },
+    {
+      "date": "2025-03-31",
+      "title": "Egr",
+      "amount": 6.3
+    },
+    {
+      "date": "2025-03-31",
+      "title": "Pg *Xgrow - Parcela 4/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-03-31",
+      "title": "Posto Marco Zero - Parcela 4/6",
+      "amount": 48.99
+    },
+    {
+      "date": "2025-03-31",
+      "title": "Prime Fit Academia - Parcela 4/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-03-31",
+      "title": "Prime Fit Academia - Parcela 5/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-03-31",
+      "title": "da Casa Alimentos",
+      "amount": 17.3
+    },
+    {
+      "date": "2025-04-01",
+      "title": "Posto Marco Zero",
+      "amount": 125.8
+    },
+    {
+      "date": "2025-04-01",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-02",
+      "title": "Adair J Muniz Pereira",
+      "amount": 17.99
+    },
+    {
+      "date": "2025-04-02",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 24.44
+    },
+    {
+      "date": "2025-04-02",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-04",
+      "title": "Carrefour Nap Sto Anto",
+      "amount": 20.56
+    },
+    {
+      "date": "2025-04-04",
+      "title": "Mercearia Serrana",
+      "amount": 70.53
+    },
+    {
+      "date": "2025-04-04",
+      "title": "Ricky Lanches",
+      "amount": 66.0
+    },
+    {
+      "date": "2025-04-04",
+      "title": "Supermerc Gomes",
+      "amount": 356.02
+    },
+    {
+      "date": "2025-04-05",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 3.84
+    },
+    {
+      "date": "2025-04-05",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 66.31
+    },
+    {
+      "date": "2025-04-05",
+      "title": "Lojas Americanas",
+      "amount": 4.49
+    },
+    {
+      "date": "2025-04-05",
+      "title": "Mercado Santo Antonio",
+      "amount": 33.29
+    },
+    {
+      "date": "2025-04-05",
+      "title": "Posto Milhas",
+      "amount": 127.8
+    },
+    {
+      "date": "2025-04-05",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-06",
+      "title": "Confrariadopaosap",
+      "amount": 5.0
+    },
+    {
+      "date": "2025-04-06",
+      "title": "Confrariadopaosap",
+      "amount": 11.52
+    },
+    {
+      "date": "2025-04-07",
+      "title": "Adair J Muniz Pereira",
+      "amount": 25.31
+    },
+    {
+      "date": "2025-04-07",
+      "title": "Carlos Henrique R de S",
+      "amount": 85.0
+    },
+    {
+      "date": "2025-04-08",
+      "title": "Google One",
+      "amount": 49.99
+    },
+    {
+      "date": "2025-04-08",
+      "title": "Posto Marco Zero",
+      "amount": 5.99
+    },
+    {
+      "date": "2025-04-08",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-09",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 29.44
+    },
+    {
+      "date": "2025-04-09",
+      "title": "Minhocaburger",
+      "amount": 98.0
+    },
+    {
+      "date": "2025-04-09",
+      "title": "Naracardoso",
+      "amount": 27.9
+    },
+    {
+      "date": "2025-04-09",
+      "title": "Radio Center Radiologi",
+      "amount": 45.0
+    },
+    {
+      "date": "2025-04-10",
+      "title": "Ricky Lanches",
+      "amount": 66.0
+    },
+    {
+      "date": "2025-04-10",
+      "title": "Supermerc Gomes",
+      "amount": 27.5
+    },
+    {
+      "date": "2025-04-11",
+      "title": "Carlos Henrique R de S",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-11",
+      "title": "Paygo*Barbearia Santo",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-04-12",
+      "title": "Buffon",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-04-12",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 71.1
+    },
+    {
+      "date": "2025-04-12",
+      "title": "Joice Sabrina Mendes",
+      "amount": 49.88
+    },
+    {
+      "date": "2025-04-12",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 18.08
+    },
+    {
+      "date": "2025-04-12",
+      "title": "Posto Milhas",
+      "amount": 316.1
+    },
+    {
+      "date": "2025-04-12",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-14",
+      "title": "Xbeleza",
+      "amount": 58.0
+    },
+    {
+      "date": "2025-04-15",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 35.45
+    },
+    {
+      "date": "2025-04-16",
+      "title": "Carlos Henrique R de S",
+      "amount": 66.0
+    },
+    {
+      "date": "2025-04-17",
+      "title": "A Lenha Pizzaria Santo",
+      "amount": 80.0
+    },
+    {
+      "date": "2025-04-17",
+      "title": "Supermerc Gomes",
+      "amount": 7.69
+    },
+    {
+      "date": "2025-04-17",
+      "title": "Supermerc Gomes",
+      "amount": 32.89
+    },
+    {
+      "date": "2025-04-18",
+      "title": "Buffon",
+      "amount": 28.96
+    },
+    {
+      "date": "2025-04-18",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-19",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-04-19",
+      "title": "Supermercados Dalpiaz",
+      "amount": 75.72
+    },
+    {
+      "date": "2025-04-20",
+      "title": "Supermerc Gomes",
+      "amount": 32.22
+    },
+    {
+      "date": "2025-04-22",
+      "title": "Barbeiro",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-04-22",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 32.68
+    },
+    {
+      "date": "2025-04-23",
+      "title": "Pegue Pao Padaria e Co",
+      "amount": 49.84
+    },
+    {
+      "date": "2025-04-23",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-24",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 42.45
+    },
+    {
+      "date": "2025-04-24",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-25",
+      "title": "Amaro",
+      "amount": 4.0
+    },
+    {
+      "date": "2025-04-25",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 25.17
+    },
+    {
+      "date": "2025-04-25",
+      "title": "Pompeia Filial - Parcela 1/5",
+      "amount": 61.96
+    },
+    {
+      "date": "2025-04-25",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-26",
+      "title": "A Lenha Pizzaria Santo",
+      "amount": 54.74
+    },
+    {
+      "date": "2025-04-26",
+      "title": "Barbeiro",
+      "amount": 20.0
+    },
+    {
+      "date": "2025-04-27",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-04-27",
+      "title": "Epemek Iii",
+      "amount": 63.5
+    },
+    {
+      "date": "2025-04-28",
+      "title": "Agouqueosoriense",
+      "amount": 75.7
+    },
+    {
+      "date": "2025-04-28",
+      "title": "Armazem Avila",
+      "amount": 11.5
+    },
+    {
+      "date": "2025-04-28",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-04-28",
+      "title": "Free Way",
+      "amount": 127.8
+    },
+    {
+      "date": "2025-04-28",
+      "title": "Havan Poa Assis Brasil - Parcela 1/5",
+      "amount": 32.03
+    },
+    {
+      "date": "2025-04-28",
+      "title": "Xbeleza",
+      "amount": 44.0
+    },
+    {
+      "date": "2025-04-29",
+      "title": "Ricky Lanches",
+      "amount": 33.0
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Havan Poa Assis Brasil - Parcela 2/5",
+      "amount": 31.99
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 49.96
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Pg *Xgrow - Parcela 5/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Pompeia Filial - Parcela 2/5",
+      "amount": 61.96
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Posto Marco Zero - Parcela 5/6",
+      "amount": 48.99
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Prime Fit Academia - Parcela 5/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Prime Fit Academia - Parcela 6/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-04-30",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-01",
+      "title": "Posto Marco Zero",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-05-01",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-02",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 38.5
+    },
+    {
+      "date": "2025-05-02",
+      "title": "Paulo Cezar Santos da",
+      "amount": 8.98
+    },
+    {
+      "date": "2025-05-03",
+      "title": "Posto Milhas",
+      "amount": 266.02
+    },
+    {
+      "date": "2025-05-03",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-03",
+      "title": "Supermerc Gomes",
+      "amount": 107.09
+    },
+    {
+      "date": "2025-05-04",
+      "title": "Cia do Sabor",
+      "amount": 164.8
+    },
+    {
+      "date": "2025-05-06",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 57.54
+    },
+    {
+      "date": "2025-05-06",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-07",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-07",
+      "title": "Supermerc Gomes",
+      "amount": 196.92
+    },
+    {
+      "date": "2025-05-08",
+      "title": "Minhocaburger",
+      "amount": 5.0
+    },
+    {
+      "date": "2025-05-09",
+      "title": "Abastecedorade",
+      "amount": 23.96
+    },
+    {
+      "date": "2025-05-09",
+      "title": "Bazar Rodrigues",
+      "amount": 20.49
+    },
+    {
+      "date": "2025-05-09",
+      "title": "Chopp House",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-09",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-05-09",
+      "title": "Executivos Hotel",
+      "amount": 525.0
+    },
+    {
+      "date": "2025-05-09",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 104.43
+    },
+    {
+      "date": "2025-05-09",
+      "title": "Via Sul Fpay",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-05-10",
+      "title": "Parmas Pizzaria",
+      "amount": 42.66
+    },
+    {
+      "date": "2025-05-10",
+      "title": "Restaurante Porao",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-05-11",
+      "title": "Buon Mangiare",
+      "amount": 45.0
+    },
+    {
+      "date": "2025-05-11",
+      "title": "Executivos Gourmet",
+      "amount": 5.0
+    },
+    {
+      "date": "2025-05-12",
+      "title": "Churrascaria Laguinho",
+      "amount": 45.0
+    },
+    {
+      "date": "2025-05-12",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-05-12",
+      "title": "Epemek Iii",
+      "amount": 30.0
+    },
+    {
+      "date": "2025-05-12",
+      "title": "Paradouro Cardoso Viei",
+      "amount": 16.0
+    },
+    {
+      "date": "2025-05-12",
+      "title": "Posto Milhas",
+      "amount": 150.04
+    },
+    {
+      "date": "2025-05-12",
+      "title": "Posto Parati Nota",
+      "amount": 4.0
+    },
+    {
+      "date": "2025-05-12",
+      "title": "Posto Parati Nota",
+      "amount": 208.55
+    },
+    {
+      "date": "2025-05-13",
+      "title": "Marlon Silva dos Santo - Parcela 1/3",
+      "amount": 39.68
+    },
+    {
+      "date": "2025-05-13",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 30.96
+    },
+    {
+      "date": "2025-05-13",
+      "title": "Ricky Lanches",
+      "amount": 45.0
+    },
+    {
+      "date": "2025-05-13",
+      "title": "Supermerc Gomes",
+      "amount": 77.27
+    },
+    {
+      "date": "2025-05-13",
+      "title": "Urbanni Cafe e Boutiqu",
+      "amount": 16.9
+    },
+    {
+      "date": "2025-05-14",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 46.2
+    },
+    {
+      "date": "2025-05-14",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-15",
+      "title": "Mercado Santo Antonio",
+      "amount": 31.83
+    },
+    {
+      "date": "2025-05-15",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-15",
+      "title": "Supermerc Gomes",
+      "amount": 8.7
+    },
+    {
+      "date": "2025-05-15",
+      "title": "Supermerc Gomes",
+      "amount": 13.2
+    },
+    {
+      "date": "2025-05-16",
+      "title": "Barbeiro",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-05-16",
+      "title": "Bazar Rodrigues",
+      "amount": 19.99
+    },
+    {
+      "date": "2025-05-16",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 5.93
+    },
+    {
+      "date": "2025-05-16",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 26.37
+    },
+    {
+      "date": "2025-05-16",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-17",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 55.29
+    },
+    {
+      "date": "2025-05-17",
+      "title": "Mercearia Serrana",
+      "amount": 36.82
+    },
+    {
+      "date": "2025-05-18",
+      "title": "Comercial de Utilidade",
+      "amount": 48.0
+    },
+    {
+      "date": "2025-05-18",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-05-18",
+      "title": "Krepsdadessa",
+      "amount": 54.0
+    },
+    {
+      "date": "2025-05-19",
+      "title": "Adair J Muniz Pereira",
+      "amount": 3.81
+    },
+    {
+      "date": "2025-05-20",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 101.5
+    },
+    {
+      "date": "2025-05-20",
+      "title": "Ivone Teresinha da Sil",
+      "amount": 23.0
+    },
+    {
+      "date": "2025-05-20",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 8.99
+    },
+    {
+      "date": "2025-05-21",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 47.35
+    },
+    {
+      "date": "2025-05-22",
+      "title": "Farmacia Sao Joao - Parcela 1/4",
+      "amount": 21.02
+    },
+    {
+      "date": "2025-05-22",
+      "title": "Mercado Santo Antonio",
+      "amount": 5.88
+    },
+    {
+      "date": "2025-05-22",
+      "title": "Xbeleza",
+      "amount": 44.0
+    },
+    {
+      "date": "2025-05-23",
+      "title": "Espetinhofest",
+      "amount": 6.0
+    },
+    {
+      "date": "2025-05-23",
+      "title": "Farmacia Sao Joao",
+      "amount": 14.9
+    },
+    {
+      "date": "2025-05-23",
+      "title": "Johnny Burgers",
+      "amount": 45.0
+    },
+    {
+      "date": "2025-05-23",
+      "title": "Livraria Abc M",
+      "amount": 1.5
+    },
+    {
+      "date": "2025-05-23",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 21.66
+    },
+    {
+      "date": "2025-05-24",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 58.4
+    },
+    {
+      "date": "2025-05-24",
+      "title": "Mercado Compre Bem",
+      "amount": 15.66
+    },
+    {
+      "date": "2025-05-24",
+      "title": "Mercearia Serrana",
+      "amount": 58.53
+    },
+    {
+      "date": "2025-05-25",
+      "title": "Sao Joao Farmacias",
+      "amount": 4.98
+    },
+    {
+      "date": "2025-05-26",
+      "title": "Paulo Cezar Santos da",
+      "amount": 27.2
+    },
+    {
+      "date": "2025-05-26",
+      "title": "Posto Marco Zero",
+      "amount": 61.9
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Gemeascel",
+      "amount": 19.99
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Google One",
+      "amount": 96.99
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 26.26
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Marcio Pizzaria Sto An",
+      "amount": 93.7
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Mercado Santo Antonio",
+      "amount": 5.48
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-29",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 35.31
+    },
+    {
+      "date": "2025-05-29",
+      "title": "Posto Marco Zero",
+      "amount": 61.9
+    },
+    {
+      "date": "2025-05-29",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-05-30",
+      "title": "A Lenha Pizzaria Santo",
+      "amount": 80.0
+    },
+    {
+      "date": "2025-05-30",
+      "title": "Mercearia Serrana",
+      "amount": 32.51
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Farmacia Sao Joao - Parcela 2/4",
+      "amount": 20.99
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Havan Poa Assis Brasil - Parcela 3/5",
+      "amount": 31.99
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 81.4
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Marlon Silva dos Santo - Parcela 2/3",
+      "amount": 39.66
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Pg *Xgrow - Parcela 6/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Pompeia Filial - Parcela 3/5",
+      "amount": 61.96
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Posto Marco Zero - Parcela 6/6",
+      "amount": 48.99
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Prime Fit Academia - Parcela 6/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-05-31",
+      "title": "Prime Fit Academia - Parcela 7/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-05-31",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-01",
+      "title": "Supermerc Gomes",
+      "amount": 34.31
+    },
+    {
+      "date": "2025-06-01",
+      "title": "Supermerc Gomes",
+      "amount": 357.13
+    },
+    {
+      "date": "2025-06-02",
+      "title": "Posto Milhas",
+      "amount": 255.6
+    },
+    {
+      "date": "2025-06-03",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-04",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-06-04",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 12.91
+    },
+    {
+      "date": "2025-06-04",
+      "title": "Padariasanta",
+      "amount": 9.3
+    },
+    {
+      "date": "2025-06-04",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-05",
+      "title": "Mercado Santo Antonio",
+      "amount": 34.9
+    },
+    {
+      "date": "2025-06-05",
+      "title": "Rb Agro",
+      "amount": 12.1
+    },
+    {
+      "date": "2025-06-05",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-06",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-07",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-07",
+      "title": "Supermerc Gomes",
+      "amount": 145.47
+    },
+    {
+      "date": "2025-06-08",
+      "title": "57 211 481 Gabriel Car",
+      "amount": 23.0
+    },
+    {
+      "date": "2025-06-09",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-06-09",
+      "title": "Linos Restaurante",
+      "amount": 78.0
+    },
+    {
+      "date": "2025-06-09",
+      "title": "Rohr Amp Rohr Comercio",
+      "amount": 30.73
+    },
+    {
+      "date": "2025-06-10",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-11",
+      "title": "Juliocesar",
+      "amount": 17.99
+    },
+    {
+      "date": "2025-06-11",
+      "title": "Mercado Santo Antonio",
+      "amount": 17.56
+    },
+    {
+      "date": "2025-06-11",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 35.24
+    },
+    {
+      "date": "2025-06-11",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-12",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 86.97
+    },
+    {
+      "date": "2025-06-12",
+      "title": "Ricky Lanches",
+      "amount": 40.0
+    },
+    {
+      "date": "2025-06-13",
+      "title": "Minhocaburger",
+      "amount": 68.0
+    },
+    {
+      "date": "2025-06-13",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 242.0
+    },
+    {
+      "date": "2025-06-13",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-13",
+      "title": "Supermerc Gomes",
+      "amount": 22.12
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Allpark Empreendimento",
+      "amount": 11.0
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Arcoplexcinemas - Bour",
+      "amount": 27.0
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Arcoplexcinemas - Bour",
+      "amount": 51.0
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Burger King",
+      "amount": 3.5
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 18.53
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Mamma Mia Gravatai",
+      "amount": 39.0
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Mercearia Serrana",
+      "amount": 52.54
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Shopping Gravatai",
+      "amount": 3.0
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Via Sul Fpay",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Winner Diversoes",
+      "amount": 8.0
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Winner Diversoes",
+      "amount": 10.0
+    },
+    {
+      "date": "2025-06-15",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-06-17",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 67.17
+    },
+    {
+      "date": "2025-06-17",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-17",
+      "title": "Uber* Trip",
+      "amount": 7.91
+    },
+    {
+      "date": "2025-06-18",
+      "title": "Mercado Santo Antonio",
+      "amount": 45.85
+    },
+    {
+      "date": "2025-06-18",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-21",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 46.86
+    },
+    {
+      "date": "2025-06-21",
+      "title": "Mercearia Serrana",
+      "amount": 23.9
+    },
+    {
+      "date": "2025-06-21",
+      "title": "Santo Antonio da Pat",
+      "amount": 23.9
+    },
+    {
+      "date": "2025-06-24",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 33.05
+    },
+    {
+      "date": "2025-06-24",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 40.0
+    },
+    {
+      "date": "2025-06-25",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 83.53
+    },
+    {
+      "date": "2025-06-25",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Mercado Santo Antonio",
+      "amount": 8.69
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 8.99
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Posto Milhas",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-27",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Barbeiro",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Google One",
+      "amount": 96.99
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 39.57
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Mercearia Serrana",
+      "amount": 44.03
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Redemacsanto - Parcela 1/2",
+      "amount": 57.0
+    },
+    {
+      "date": "2025-06-28",
+      "title": "Santo Antonio da Pat",
+      "amount": 35.83
+    },
+    {
+      "date": "2025-06-29",
+      "title": "Sao Joao Farmacias",
+      "amount": 22.99
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Farmacia Sao Joao - Parcela 3/4",
+      "amount": 20.99
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Havan POA - Parcela 4/5",
+      "amount": 31.99
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Marlon Silva dos Santo - Parcela 3/3",
+      "amount": 39.66
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Padaria e Confeitaria",
+      "amount": 20.06
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Pg *Xgrow - Parcela 7/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Pompeia Filial - Parcela 4/5",
+      "amount": 61.96
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Prime Fit Academia - Parcela 7/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Prime Fit Academia - Parcela 8/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-06-30",
+      "title": "Redemacsanto - Parcela 2/2",
+      "amount": 57.0
+    },
+    {
+      "date": "2025-07-01",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 85.65
+    },
+    {
+      "date": "2025-07-01",
+      "title": "Posto Marco Zero",
+      "amount": 296.05
+    },
+    {
+      "date": "2025-07-01",
+      "title": "Supermerc Gomes",
+      "amount": 291.25
+    },
+    {
+      "date": "2025-07-03",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 49.3
+    },
+    {
+      "date": "2025-07-03",
+      "title": "Padaria e Confeitaria",
+      "amount": 12.73
+    },
+    {
+      "date": "2025-07-03",
+      "title": "Uber* Trip",
+      "amount": 7.97
+    },
+    {
+      "date": "2025-07-04",
+      "title": "Cremolatto Santo Anton",
+      "amount": 38.49
+    },
+    {
+      "date": "2025-07-04",
+      "title": "Mercado Santo Antonio",
+      "amount": 10.04
+    },
+    {
+      "date": "2025-07-04",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-07-04",
+      "title": "Sao Joao Farmacias - Parcela 1/2",
+      "amount": 22.27
+    },
+    {
+      "date": "2025-07-04",
+      "title": "Supermerc Gomes",
+      "amount": 263.19
+    },
+    {
+      "date": "2025-07-05",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-07-05",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-07-06",
+      "title": "Atacadao 088 As",
+      "amount": 70.27
+    },
+    {
+      "date": "2025-07-06",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-07-06",
+      "title": "Leroy Merlin - Parcela 1/2",
+      "amount": 106.33
+    },
+    {
+      "date": "2025-07-07",
+      "title": "Bazar Rodrigues",
+      "amount": 8.49
+    },
+    {
+      "date": "2025-07-07",
+      "title": "Mercearia Serrana",
+      "amount": 15.93
+    },
+    {
+      "date": "2025-07-07",
+      "title": "Padaria e Confeitaria",
+      "amount": 15.24
+    },
+    {
+      "date": "2025-07-07",
+      "title": "Sao Joao Farmacias",
+      "amount": 23.74
+    },
+    {
+      "date": "2025-07-07",
+      "title": "Supermerc Gomes",
+      "amount": 9.5
+    },
+    {
+      "date": "2025-07-08",
+      "title": "Conta Vivo",
+      "amount": 65.0
+    },
+    {
+      "date": "2025-07-08",
+      "title": "Juliocesar",
+      "amount": 6.0
+    },
+    {
+      "date": "2025-07-08",
+      "title": "Juliocesar",
+      "amount": 28.99
+    },
+    {
+      "date": "2025-07-08",
+      "title": "Minhocaburger",
+      "amount": 68.0
+    },
+    {
+      "date": "2025-07-08",
+      "title": "Mini*Mercado",
+      "amount": 3.59
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Facebk *4gkuguynn2",
+      "amount": 0.46
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Facebk *Dlc8rv4pn2",
+      "amount": 20.25
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Facebk *Xbe8mvcpn2",
+      "amount": 15.22
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 72.81
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Paygo*Barbearia San",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-07-10",
+      "title": "Facebk *Mzzucuqnn2",
+      "amount": 20.04
+    },
+    {
+      "date": "2025-07-10",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-07-11",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 8.06
+    },
+    {
+      "date": "2025-07-11",
+      "title": "Mercado Santo Antonio",
+      "amount": 9.48
+    },
+    {
+      "date": "2025-07-11",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 2.56
+    },
+    {
+      "date": "2025-07-11",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-07-12",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-07-12",
+      "title": "Supermerc Gomes",
+      "amount": 91.57
+    },
+    {
+      "date": "2025-07-13",
+      "title": "Buffon",
+      "amount": 53.49
+    },
+    {
+      "date": "2025-07-13",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-07-13",
+      "title": "Sao Joao Farmacias",
+      "amount": 12.06
+    },
+    {
+      "date": "2025-07-15",
+      "title": "Mercado Santo Antonio",
+      "amount": 59.13
+    },
+    {
+      "date": "2025-07-15",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 13.11
+    },
+    {
+      "date": "2025-07-15",
+      "title": "Posto Milhas",
+      "amount": 60.0
+    },
+    {
+      "date": "2025-07-15",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 103.42
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Intercity Canoas",
+      "amount": 10.0
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Posto Marco Zero",
+      "amount": 7.99
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Supermerc Gomes",
+      "amount": 23.28
+    },
+    {
+      "date": "2025-07-18",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-07-18",
+      "title": "Conta Vivo",
+      "amount": 142.97
+    },
+    {
+      "date": "2025-07-18",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 77.21
+    },
+    {
+      "date": "2025-07-18",
+      "title": "Posto Marco Zero",
+      "amount": 257.99
+    },
+    {
+      "date": "2025-07-19",
+      "title": "Farmaciamuniz",
+      "amount": 14.9
+    },
+    {
+      "date": "2025-07-19",
+      "title": "Mercearia Serrana",
+      "amount": 40.88
+    },
+    {
+      "date": "2025-07-19",
+      "title": "Pegue Pao Padaria e Co",
+      "amount": 24.35
+    },
+    {
+      "date": "2025-07-20",
+      "title": "Barbeiro",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-07-21",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-07-23",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 80.88
+    },
+    {
+      "date": "2025-07-23",
+      "title": "Santo Antonio da Pat",
+      "amount": 39.9
+    },
+    {
+      "date": "2025-07-24",
+      "title": "Supermerc Gomes",
+      "amount": 40.46
+    },
+    {
+      "date": "2025-07-25",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-07-25",
+      "title": "Livraria Abc M",
+      "amount": 4.0
+    },
+    {
+      "date": "2025-07-25",
+      "title": "Marcio Pizzaria Sto An",
+      "amount": 33.9
+    },
+    {
+      "date": "2025-07-26",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 77.67
+    },
+    {
+      "date": "2025-07-26",
+      "title": "Mercearia Serrana",
+      "amount": 60.9
+    },
+    {
+      "date": "2025-07-27",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 8.97
+    },
+    {
+      "date": "2025-07-28",
+      "title": "Google One",
+      "amount": 96.99
+    },
+    {
+      "date": "2025-07-28",
+      "title": "Supermerc Gomes",
+      "amount": 35.58
+    },
+    {
+      "date": "2025-07-29",
+      "title": "Mercearia Serrana",
+      "amount": 15.12
+    },
+    {
+      "date": "2025-07-30",
+      "title": "Supermerc Gomes",
+      "amount": 93.22
+    },
+    {
+      "date": "2025-07-30",
+      "title": "Vanderleijosedoss",
+      "amount": 2.5
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Farmacia Sao Joao - Parcela 4/4",
+      "amount": 20.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Havan POA - Parcela 5/5",
+      "amount": 31.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Joao D Avila da Silva",
+      "amount": 30.0
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Joicesabrina",
+      "amount": 23.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Leroy Merlin - Parcela 2/2",
+      "amount": 106.33
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Pg *Xgrow - Parcela 10/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Pg *Xgrow - Parcela 11/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Pg *Xgrow - Parcela 12/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Pg *Xgrow - Parcela 8/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Pg *Xgrow - Parcela 9/12",
+      "amount": 299.7
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Pompeia Filial - Parcela 5/5",
+      "amount": 61.96
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 10/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 10/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 11/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 11/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 12/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 12/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 8/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 9/12",
+      "amount": 29.99
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Prime Fit Academia - Parcela 9/12",
+      "amount": 54.15
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Santo Antonio da Pat",
+      "amount": 7.0
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Sao Joao Farmacias - Parcela 2/2",
+      "amount": 22.27
+    },
+    {
+      "date": "2025-08-01",
+      "title": "A Lenha Pizzaria Santo",
+      "amount": 8.0
+    },
+    {
+      "date": "2025-08-01",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-08-02",
+      "title": "Milena dos Santos Muni",
+      "amount": 9.29
+    },
+    {
+      "date": "2025-08-02",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 245.05
+    },
+    {
+      "date": "2025-08-02",
+      "title": "Supermerc Gomes",
+      "amount": 547.95
+    },
+    {
+      "date": "2025-08-04",
+      "title": "Supermerc Gomes",
+      "amount": 60.29
+    },
+    {
+      "date": "2025-08-05",
+      "title": "Posto Marco Zero",
+      "amount": 12.98
+    },
+    {
+      "date": "2025-08-06",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 101.57
+    },
+    {
+      "date": "2025-08-06",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 16.86
+    },
+    {
+      "date": "2025-08-08",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-08-08",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 41.11
+    },
+    {
+      "date": "2025-08-09",
+      "title": "Lojas Americanas",
+      "amount": 46.97
+    },
+    {
+      "date": "2025-08-09",
+      "title": "Mercadopago *Ribassol",
+      "amount": 9.9
+    },
+    {
+      "date": "2025-08-09",
+      "title": "Pegue Pao Padaria e Co",
+      "amount": 38.24
+    },
+    {
+      "date": "2025-08-10",
+      "title": "Buena Pizza",
+      "amount": 160.0
+    },
+    {
+      "date": "2025-08-10",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-08-10",
+      "title": "Supermecado Dalpiaz",
+      "amount": 35.13
+    },
+    {
+      "date": "2025-08-11",
+      "title": "Acoriana",
+      "amount": 9.29
+    },
+    {
+      "date": "2025-08-11",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-08-12",
+      "title": "Posto Milhas",
+      "amount": 12.99
+    },
+    {
+      "date": "2025-08-13",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 19.78
+    },
+    {
+      "date": "2025-08-13",
+      "title": "Supermerc Gomes",
+      "amount": 127.02
+    },
+    {
+      "date": "2025-08-14",
+      "title": "Lfmsparque",
+      "amount": 55.0
+    },
+    {
+      "date": "2025-08-14",
+      "title": "Minhocaburger",
+      "amount": 102.0
+    },
+    {
+      "date": "2025-08-14",
+      "title": "Puxadaboa",
+      "amount": 7.0
+    },
+    {
+      "date": "2025-08-15",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-08-15",
+      "title": "Joicesabrina",
+      "amount": 52.83
+    },
+    {
+      "date": "2025-08-15",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 17.56
+    },
+    {
+      "date": "2025-08-15",
+      "title": "Posto Marco Zero",
+      "amount": 7.99
+    },
+    {
+      "date": "2025-08-16",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 100.0
+    },
+    {
+      "date": "2025-08-16",
+      "title": "Supermerc Gomes",
+      "amount": 138.65
+    },
+    {
+      "date": "2025-08-17",
+      "title": "Xis Beleza",
+      "amount": 32.0
+    },
+    {
+      "date": "2025-08-18",
+      "title": "Supermercado Asun",
+      "amount": 62.34
+    },
+    {
+      "date": "2025-08-19",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 33.24
+    },
+    {
+      "date": "2025-08-19",
+      "title": "Mercado Santo Antonio",
+      "amount": 16.46
+    },
+    {
+      "date": "2025-08-20",
+      "title": "Mercado Santo Antonio",
+      "amount": 8.72
+    },
+    {
+      "date": "2025-08-20",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 19.12
+    },
+    {
+      "date": "2025-08-21",
+      "title": "Mercado Santo Antonio",
+      "amount": 14.96
+    },
+    {
+      "date": "2025-08-21",
+      "title": "Minhocaburger",
+      "amount": 34.0
+    },
+    {
+      "date": "2025-08-22",
+      "title": "Adair J Muniz Pereira",
+      "amount": 7.29
+    },
+    {
+      "date": "2025-08-22",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-08-22",
+      "title": "Pegue Pao Padaria e Co",
+      "amount": 25.87
+    },
+    {
+      "date": "2025-08-22",
+      "title": "Posto Milhas",
+      "amount": 242.86
+    },
+    {
+      "date": "2025-08-23",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 96.54
+    },
+    {
+      "date": "2025-08-23",
+      "title": "Mercado Santo Antonio",
+      "amount": 13.99
+    },
+    {
+      "date": "2025-08-23",
+      "title": "Mercado Santo Antonio",
+      "amount": 17.98
+    },
+    {
+      "date": "2025-08-23",
+      "title": "Supermerc Gomes",
+      "amount": 129.69
+    },
+    {
+      "date": "2025-08-24",
+      "title": "Dl *Google Musical Cho",
+      "amount": 39.9
+    },
+    {
+      "date": "2025-08-25",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-08-25",
+      "title": "Jj Eventos",
+      "amount": 132.51
+    },
+    {
+      "date": "2025-08-25",
+      "title": "Padaria e Confeitaria",
+      "amount": 13.04
+    },
+    {
+      "date": "2025-08-26",
+      "title": "Bazar Rodrigues",
+      "amount": 10.19
+    },
+    {
+      "date": "2025-08-26",
+      "title": "Bazar Rodrigues",
+      "amount": 21.98
+    },
+    {
+      "date": "2025-08-26",
+      "title": "Carlos Henrique R de S",
+      "amount": 58.0
+    },
+    {
+      "date": "2025-08-26",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 23.62
+    },
+    {
+      "date": "2025-08-26",
+      "title": "Marcio Pizzaria Sto An",
+      "amount": 97.8
+    },
+    {
+      "date": "2025-08-26",
+      "title": "Mercearia Serrana",
+      "amount": 35.93
+    },
+    {
+      "date": "2025-08-27",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 49.78
+    },
+    {
+      "date": "2025-08-28",
+      "title": "Carlos Henrique R de S",
+      "amount": 60.0
+    },
+    {
+      "date": "2025-08-28",
+      "title": "Google One",
+      "amount": 96.99
+    },
+    {
+      "date": "2025-08-28",
+      "title": "Rb Agro",
+      "amount": 9.6
+    },
+    {
+      "date": "2025-08-29",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-08-29",
+      "title": "Juliocesar",
+      "amount": 30.0
+    },
+    {
+      "date": "2025-08-30",
+      "title": "Borbacafeteria",
+      "amount": 8.0
+    },
+    {
+      "date": "2025-08-30",
+      "title": "Borbacafeteria",
+      "amount": 19.0
+    },
+    {
+      "date": "2025-08-30",
+      "title": "Panvel Farmacias",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-08-30",
+      "title": "Supermerc Gomes",
+      "amount": 130.94
+    },
+    {
+      "date": "2025-09-01",
+      "title": "Conta Vivo",
+      "amount": 71.71
+    },
+    {
+      "date": "2025-09-02",
+      "title": "Adair J Muniz Pereira",
+      "amount": 23.12
+    },
+    {
+      "date": "2025-09-02",
+      "title": "Mercado Santo Antonio",
+      "amount": 66.87
+    },
+    {
+      "date": "2025-09-02",
+      "title": "Uber Uber *Trip Help.U",
+      "amount": 8.97
+    },
+    {
+      "date": "2025-09-02",
+      "title": "Uber* Trip",
+      "amount": 11.91
+    },
+    {
+      "date": "2025-09-03",
+      "title": "Acessorio Patrulhense - Parcela 1/3",
+      "amount": 144.68
+    },
+    {
+      "date": "2025-09-03",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 19.17
+    },
+    {
+      "date": "2025-09-04",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 30.62
+    },
+    {
+      "date": "2025-09-04",
+      "title": "Mercearia Serrana",
+      "amount": 125.24
+    },
+    {
+      "date": "2025-09-04",
+      "title": "Supermerc Gomes",
+      "amount": 403.93
+    },
+    {
+      "date": "2025-09-05",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 38.75
+    },
+    {
+      "date": "2025-09-05",
+      "title": "Posto Marco Zero",
+      "amount": 9.98
+    },
+    {
+      "date": "2025-09-06",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-09-06",
+      "title": "Fernandes Fernandes e",
+      "amount": 57.73
+    },
+    {
+      "date": "2025-09-07",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-09-07",
+      "title": "Dudabella Pizzaria For",
+      "amount": 5.0
+    },
+    {
+      "date": "2025-09-07",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 119.8
+    },
+    {
+      "date": "2025-09-08",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-09-09",
+      "title": "Festi Doce",
+      "amount": 7.5
+    },
+    {
+      "date": "2025-09-09",
+      "title": "Marcio Pizzaria Sto An",
+      "amount": 62.9
+    },
+    {
+      "date": "2025-09-09",
+      "title": "Mercado Santo Antonio",
+      "amount": 4.0
+    },
+    {
+      "date": "2025-09-09",
+      "title": "Mercado Santo Antonio",
+      "amount": 4.64
+    },
+    {
+      "date": "2025-09-09",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-09-10",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 95.97
+    },
+    {
+      "date": "2025-09-11",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-09-11",
+      "title": "Joicesabrina",
+      "amount": 5.25
+    },
+    {
+      "date": "2025-09-11",
+      "title": "Joicesabrina",
+      "amount": 24.98
+    },
+    {
+      "date": "2025-09-12",
+      "title": "34.927.026 Andrielli",
+      "amount": 3.5
+    },
+    {
+      "date": "2025-09-12",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-09-12",
+      "title": "Mercado Santo Antonio",
+      "amount": 5.7
+    },
+    {
+      "date": "2025-09-12",
+      "title": "Rei dos Doces Comercio",
+      "amount": 11.07
+    },
+    {
+      "date": "2025-09-12",
+      "title": "Supermerc Gomes",
+      "amount": 51.26
+    },
+    {
+      "date": "2025-09-13",
+      "title": "Carlos Henrique R de S",
+      "amount": 57.8
+    },
+    {
+      "date": "2025-09-13",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 33.41
+    },
+    {
+      "date": "2025-09-13",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 13.28
+    },
+    {
+      "date": "2025-09-13",
+      "title": "Rei dos Doces Comercio",
+      "amount": 19.77
+    },
+    {
+      "date": "2025-09-15",
+      "title": "Mercado Santo Antonio",
+      "amount": 15.99
+    },
+    {
+      "date": "2025-09-15",
+      "title": "Minhocaburger",
+      "amount": 59.0
+    },
+    {
+      "date": "2025-09-15",
+      "title": "Padaria e Confeitaria",
+      "amount": 26.22
+    },
+    {
+      "date": "2025-09-15",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 253.32
+    },
+    {
+      "date": "2025-09-16",
+      "title": "A Lenha Pizzaria Santo",
+      "amount": 45.0
+    },
+    {
+      "date": "2025-09-16",
+      "title": "Mercado Santo Antonio",
+      "amount": 18.25
+    },
+    {
+      "date": "2025-09-17",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 72.77
+    },
+    {
+      "date": "2025-09-17",
+      "title": "Restaurante Casa Nostr",
+      "amount": 9.0
+    },
+    {
+      "date": "2025-09-17",
+      "title": "Santa Pausa Mais",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-09-18",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 47.99
+    },
+    {
+      "date": "2025-09-18",
+      "title": "Padaria e Confeitaria",
+      "amount": 1.87
+    },
+    {
+      "date": "2025-09-18",
+      "title": "Ricky Lanches",
+      "amount": 26.16
+    },
+    {
+      "date": "2025-09-20",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 73.86
+    },
+    {
+      "date": "2025-09-20",
+      "title": "Lancheria do Batista",
+      "amount": 20.0
+    },
+    {
+      "date": "2025-09-20",
+      "title": "Mercearia Serrana",
+      "amount": 33.92
+    },
+    {
+      "date": "2025-09-20",
+      "title": "Rede Tradicao F57 Ca",
+      "amount": 17.48
+    },
+    {
+      "date": "2025-09-21",
+      "title": "Cia do Sabor",
+      "amount": 201.7
+    },
+    {
+      "date": "2025-09-22",
+      "title": "Acessorio Patrulhense - Parcela 2/3",
+      "amount": 144.66
+    },
+    {
+      "date": "2025-09-22",
+      "title": "Acessorio Patrulhense - Parcela 3/3",
+      "amount": 144.66
+    },
+    {
+      "date": "2025-09-22",
+      "title": "Padaria e Confeitaria",
+      "amount": 27.21
+    },
+    {
+      "date": "2025-09-22",
+      "title": "Supermerc Gomes",
+      "amount": 9.76
+    },
+    {
+      "date": "2025-09-22",
+      "title": "Supermerc Gomes",
+      "amount": 88.61
+    },
+    {
+      "date": "2025-09-24",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 58.41
+    },
+    {
+      "date": "2025-09-24",
+      "title": "Padaria Sao Pedro",
+      "amount": 23.58
+    },
+    {
+      "date": "2025-09-24",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-09-25",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 50.55
+    },
+    {
+      "date": "2025-09-25",
+      "title": "Rancho",
+      "amount": 65.3
+    },
+    {
+      "date": "2025-09-25",
+      "title": "Sao Joao Farmacias",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-09-26",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-09-26",
+      "title": "Juliocesar",
+      "amount": 36.57
+    },
+    {
+      "date": "2025-09-26",
+      "title": "Minhocaburger",
+      "amount": 68.0
+    },
+    {
+      "date": "2025-09-26",
+      "title": "Supermerc Gomes",
+      "amount": 140.83
+    },
+    {
+      "date": "2025-09-26",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-09-27",
+      "title": "Mercado Santo Antonio",
+      "amount": 11.2
+    },
+    {
+      "date": "2025-09-28",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-09-28",
+      "title": "Google One",
+      "amount": 96.99
+    },
+    {
+      "date": "2025-09-29",
+      "title": "Elianeramos",
+      "amount": 34.0
+    },
+    {
+      "date": "2025-09-29",
+      "title": "Posto Milhas",
+      "amount": 30.0
+    },
+    {
+      "date": "2025-09-29",
+      "title": "Supermerc Gomes",
+      "amount": 80.71
+    },
+    {
+      "date": "2025-09-30",
+      "title": "Gasbomprincipio",
+      "amount": 128.0
+    },
+    {
+      "date": "2025-09-30",
+      "title": "Mercado Santo Antonio",
+      "amount": 5.56
+    },
+    {
+      "date": "2025-09-30",
+      "title": "Mercado Santo Antonio",
+      "amount": 7.57
+    },
+    {
+      "date": "2025-09-30",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 1.36
+    },
+    {
+      "date": "2025-09-30",
+      "title": "Panvel Farmacias",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-10-01",
+      "title": "Farmacia Sao Joao",
+      "amount": 15.9
+    },
+    {
+      "date": "2025-10-01",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 48.74
+    },
+    {
+      "date": "2025-10-01",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 25.86
+    },
+    {
+      "date": "2025-10-01",
+      "title": "Posto Marco Zero",
+      "amount": 243.73
+    },
+    {
+      "date": "2025-10-02",
+      "title": "Lojas Americanas",
+      "amount": 4.78
+    },
+    {
+      "date": "2025-10-02",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-10-03",
+      "title": "Supermerc Gomes",
+      "amount": 15.36
+    },
+    {
+      "date": "2025-10-03",
+      "title": "Supermerc Gomes",
+      "amount": 112.45
+    },
+    {
+      "date": "2025-10-04",
+      "title": "Rancho",
+      "amount": 54.65
+    },
+    {
+      "date": "2025-10-04",
+      "title": "Supermerc Gomes",
+      "amount": 264.26
+    },
+    {
+      "date": "2025-10-05",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-10-05",
+      "title": "Dudabella Pizzaria For",
+      "amount": 115.0
+    },
+    {
+      "date": "2025-10-06",
+      "title": "Padaria e Confeitaria",
+      "amount": 24.0
+    },
+    {
+      "date": "2025-10-07",
+      "title": "Farmacia Sao Joao",
+      "amount": 35.8
+    },
+    {
+      "date": "2025-10-07",
+      "title": "Panvel Farmacias",
+      "amount": 8.98
+    },
+    {
+      "date": "2025-10-08",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 23.64
+    },
+    {
+      "date": "2025-10-08",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 57.79
+    },
+    {
+      "date": "2025-10-08",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 21.73
+    },
+    {
+      "date": "2025-10-08",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-10-09",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-10-09",
+      "title": "Posto Marco Zero",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-10-09",
+      "title": "Vanderleijosedoss",
+      "amount": 11.0
+    },
+    {
+      "date": "2025-10-10",
+      "title": "Mercado Santo Antonio",
+      "amount": 15.99
+    },
+    {
+      "date": "2025-10-10",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 5.88
+    },
+    {
+      "date": "2025-10-10",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-10-11",
+      "title": "Lancheriaok",
+      "amount": 25.0
+    },
+    {
+      "date": "2025-10-11",
+      "title": "Ricky Lanches",
+      "amount": 37.0
+    },
+    {
+      "date": "2025-10-11",
+      "title": "Supermerc Gomes",
+      "amount": 2.08
+    },
+    {
+      "date": "2025-10-11",
+      "title": "Supermerc Gomes",
+      "amount": 171.64
+    },
+    {
+      "date": "2025-10-13",
+      "title": "Egr",
+      "amount": 6.3
+    },
+    {
+      "date": "2025-10-13",
+      "title": "Posto Jocimar",
+      "amount": 10.0
+    },
+    {
+      "date": "2025-10-14",
+      "title": "Panvel Farmacias",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-10-14",
+      "title": "Sao Joao Farmacias",
+      "amount": 12.99
+    },
+    {
+      "date": "2025-10-15",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-10-15",
+      "title": "Livraria Abc M",
+      "amount": 3.0
+    },
+    {
+      "date": "2025-10-15",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 20.75
+    },
+    {
+      "date": "2025-10-15",
+      "title": "Posto Milhas",
+      "amount": 263.05
+    },
+    {
+      "date": "2025-10-16",
+      "title": "Minhocaburger",
+      "amount": 68.0
+    },
+    {
+      "date": "2025-10-16",
+      "title": "Mini Mercado 3 Irmaos",
+      "amount": 5.49
+    },
+    {
+      "date": "2025-10-16",
+      "title": "Supermerc Gomes",
+      "amount": 165.86
+    },
+    {
+      "date": "2025-10-17",
+      "title": "Mercearia Serrana",
+      "amount": 67.17
+    },
+    {
+      "date": "2025-10-18",
+      "title": "A Lenha Pizzaria Santo",
+      "amount": 66.96
+    },
+    {
+      "date": "2025-10-18",
+      "title": "Cremolatto Santo Anton",
+      "amount": 31.49
+    },
+    {
+      "date": "2025-10-18",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 42.52
+    },
+    {
+      "date": "2025-10-18",
+      "title": "Industria de Doces Sel",
+      "amount": 31.5
+    },
+    {
+      "date": "2025-10-18",
+      "title": "Lojas Americanas",
+      "amount": 16.99
+    },
+    {
+      "date": "2025-10-18",
+      "title": "Mercado Santo Antonio",
+      "amount": 11.99
+    },
+    {
+      "date": "2025-10-18",
+      "title": "Supermerc Gomes",
+      "amount": 113.93
+    },
+    {
+      "date": "2025-10-21",
+      "title": "Adair J Muniz Pereira",
+      "amount": 15.75
+    },
+    {
+      "date": "2025-10-21",
+      "title": "Fernandes Fernandes e",
+      "amount": 20.81
+    },
+    {
+      "date": "2025-10-21",
+      "title": "Rancho",
+      "amount": 54.66
+    },
+    {
+      "date": "2025-10-22",
+      "title": "Mercado Santo Antonio",
+      "amount": 12.99
+    },
+    {
+      "date": "2025-10-22",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-10-23",
+      "title": "A Lenha Pizzaria Santo",
+      "amount": 89.1
+    },
+    {
+      "date": "2025-10-23",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-10-23",
+      "title": "Bazar Rodrigues",
+      "amount": 8.47
+    },
+    {
+      "date": "2025-10-23",
+      "title": "Joicesabrina",
+      "amount": 45.48
+    },
+    {
+      "date": "2025-10-23",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 30.86
+    },
+    {
+      "date": "2025-10-23",
+      "title": "Panvel Farmacias",
+      "amount": 6.99
+    },
+    {
+      "date": "2025-10-23",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-10-24",
+      "title": "Mercado Santo Antonio",
+      "amount": 44.64
+    },
+    {
+      "date": "2025-10-25",
+      "title": "Mercearia Serrana",
+      "amount": 38.66
+    },
+    {
+      "date": "2025-10-25",
+      "title": "Ricky Lanches",
+      "amount": 24.65
+    },
+    {
+      "date": "2025-10-25",
+      "title": "Supermerc Gomes",
+      "amount": 79.99
+    },
+    {
+      "date": "2025-10-25",
+      "title": "Xis Beleza",
+      "amount": 40.0
+    },
+    {
+      "date": "2025-10-26",
+      "title": "Minhocaburger",
+      "amount": 59.0
+    },
+    {
+      "date": "2025-10-28",
+      "title": "Mercado Santo Antonio",
+      "amount": 4.0
+    },
+    {
+      "date": "2025-10-28",
+      "title": "Mercado Santo Antonio",
+      "amount": 76.46
+    },
+    {
+      "date": "2025-10-29",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-10-29",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 49.27
+    },
+    {
+      "date": "2025-10-30",
+      "title": "Mercado Santo Antonio",
+      "amount": 9.28
+    },
+    {
+      "date": "2025-10-31",
+      "title": "A Lenha Pizzaria Sant",
+      "amount": 166.12
+    },
+    {
+      "date": "2025-11-01",
+      "title": "Lojas Americanas",
+      "amount": 26.27
+    },
+    {
+      "date": "2025-11-01",
+      "title": "Supermerc Gomes",
+      "amount": 137.59
+    },
+    {
+      "date": "2025-11-01",
+      "title": "The Front Conveniencia",
+      "amount": 12.0
+    },
+    {
+      "date": "2025-11-03",
+      "title": "Posto Marco Zero",
+      "amount": 252.48
+    },
+    {
+      "date": "2025-11-04",
+      "title": "Padariasanta",
+      "amount": 4.5
+    },
+    {
+      "date": "2025-11-04",
+      "title": "Supermerc Gomes",
+      "amount": 439.14
+    },
+    {
+      "date": "2025-11-04",
+      "title": "Urbanni Cafe e Boutiqu",
+      "amount": 40.5
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Barbeiro",
+      "amount": 30.0
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Julio Cesar Selistre P",
+      "amount": 28.29
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Mercado Santo Antonio",
+      "amount": 11.43
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 26.03
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Rancho",
+      "amount": 52.06
+    },
+    {
+      "date": "2025-11-06",
+      "title": "X do Brutus Restaurant",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-11-07",
+      "title": "Lojas Americanas",
+      "amount": 10.48
+    },
+    {
+      "date": "2025-11-08",
+      "title": "Mercearia Serrana",
+      "amount": 65.03
+    },
+    {
+      "date": "2025-11-08",
+      "title": "Supermerc Gomes",
+      "amount": 115.45
+    },
+    {
+      "date": "2025-11-08",
+      "title": "X do Brutus Restaurant",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-11",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-11-11",
+      "title": "I J de Paula",
+      "amount": 5.0
+    },
+    {
+      "date": "2025-11-11",
+      "title": "Mercado Compre Bem",
+      "amount": 28.93
+    },
+    {
+      "date": "2025-11-11",
+      "title": "Rafael Altenetter da S",
+      "amount": 7.9
+    },
+    {
+      "date": "2025-11-12",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 71.3
+    },
+    {
+      "date": "2025-11-13",
+      "title": "Google Youtube",
+      "amount": 53.9
+    },
+    {
+      "date": "2025-11-13",
+      "title": "Mercado Santo Antonio",
+      "amount": 7.49
+    },
+    {
+      "date": "2025-11-13",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-14",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 71.8
+    },
+    {
+      "date": "2025-11-14",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-15",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 26.56
+    },
+    {
+      "date": "2025-11-15",
+      "title": "Lojas Americanas",
+      "amount": 99.03
+    },
+    {
+      "date": "2025-11-15",
+      "title": "Macrobala Distribuidor",
+      "amount": 46.31
+    },
+    {
+      "date": "2025-11-15",
+      "title": "Rancho",
+      "amount": 61.35
+    },
+    {
+      "date": "2025-11-15",
+      "title": "Sao Joao Farmacias",
+      "amount": 23.99
+    },
+    {
+      "date": "2025-11-16",
+      "title": "Santo Antonio da Pat",
+      "amount": 29.79
+    },
+    {
+      "date": "2025-11-17",
+      "title": "Abastecedorade",
+      "amount": 16.99
+    },
+    {
+      "date": "2025-11-17",
+      "title": "Linos Restaurante",
+      "amount": 4.0
+    },
+    {
+      "date": "2025-11-17",
+      "title": "Linos Restaurante",
+      "amount": 99.0
+    },
+    {
+      "date": "2025-11-17",
+      "title": "Solary Glasses",
+      "amount": 60.0
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 28.13
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Mercado Santo Antonio",
+      "amount": 52.98
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Mercearia Serrana",
+      "amount": 40.29
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-19",
+      "title": "Mercado Santo Antonio",
+      "amount": 14.26
+    },
+    {
+      "date": "2025-11-19",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-19",
+      "title": "Sao Joao Farmacias",
+      "amount": 27.31
+    },
+    {
+      "date": "2025-11-20",
+      "title": "Minhocaburger",
+      "amount": 96.0
+    },
+    {
+      "date": "2025-11-20",
+      "title": "Posto Milhas",
+      "amount": 150.0
+    },
+    {
+      "date": "2025-11-20",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-21",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-11-22",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-22",
+      "title": "Sao Joao Farmacias",
+      "amount": 15.79
+    },
+    {
+      "date": "2025-11-22",
+      "title": "Supermerc Gomes",
+      "amount": 134.59
+    },
+    {
+      "date": "2025-11-23",
+      "title": "Bom Mercado Comercio D",
+      "amount": 5.73
+    },
+    {
+      "date": "2025-11-23",
+      "title": "Concessionaria das Rod",
+      "amount": 5.5
+    },
+    {
+      "date": "2025-11-24",
+      "title": "Mercado Santo Antonio",
+      "amount": 15.99
+    },
+    {
+      "date": "2025-11-24",
+      "title": "Padaria e Confeitaria",
+      "amount": 10.76
+    },
+    {
+      "date": "2025-11-24",
+      "title": "Supermerc Gomes",
+      "amount": 12.49
+    },
+    {
+      "date": "2025-11-25",
+      "title": "Padaria e Confeitaria",
+      "amount": 8.6
+    },
+    {
+      "date": "2025-11-26",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-26",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 61.99
+    },
+    {
+      "date": "2025-11-26",
+      "title": "Posto Marco Zero",
+      "amount": 100.0
+    },
+    {
+      "date": "2025-11-27",
+      "title": "Rancho1238",
+      "amount": 24.2
+    },
+    {
+      "date": "2025-11-27",
+      "title": "Ricky Lanches",
+      "amount": 25.0
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Google One",
+      "amount": 49.99
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Mercado Santo Antonio",
+      "amount": 21.0
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Uber Uber *Trip Help.U",
+      "amount": 9.9
+    },
+    {
+      "date": "2025-11-29",
+      "title": "A Lenha Pizzaria Sant",
+      "amount": 161.82
+    },
+    {
+      "date": "2025-11-29",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 59.23
+    },
+    {
+      "date": "2025-11-29",
+      "title": "Macrobala Distribuidor",
+      "amount": 8.28
+    },
+    {
+      "date": "2025-11-29",
+      "title": "Macrobala Distribuidor",
+      "amount": 11.77
+    },
+    {
+      "date": "2025-11-29",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-11-30",
+      "title": "Carlos Henrique R de S",
+      "amount": 149.7
+    },
+    {
+      "date": "2025-12-01",
+      "title": "Supermerc Gomes",
+      "amount": 3.49
+    },
+    {
+      "date": "2025-12-01",
+      "title": "Supermerc Gomes",
+      "amount": 36.6
+    },
+    {
+      "date": "2025-12-02",
+      "title": "Adair J Muniz Pereira",
+      "amount": 13.98
+    },
+    {
+      "date": "2025-12-02",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 86.33
+    },
+    {
+      "date": "2025-12-03",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-12-03",
+      "title": "Posto Marco Zero",
+      "amount": 4.99
+    },
+    {
+      "date": "2025-12-03",
+      "title": "Posto Milhas",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-12-04",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-12-04",
+      "title": "Joice Sabrina Mendes",
+      "amount": 48.32
+    },
+    {
+      "date": "2025-12-04",
+      "title": "Supermerc Gomes",
+      "amount": 248.37
+    },
+    {
+      "date": "2025-12-05",
+      "title": "Carlos Henrique R de S",
+      "amount": 83.0
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Amazonmktplc*Brasilvip - Parcela 1/2",
+      "amount": 49.43
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Carlos Henrique R de S",
+      "amount": 38.0
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Giovani Muniz Pinto",
+      "amount": 18.5
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 91.16
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Rancho",
+      "amount": 34.9
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Rede Farroupilha Gesta",
+      "amount": 50.0
+    },
+    {
+      "date": "2025-12-07",
+      "title": "Mercado Santo Antonio",
+      "amount": 65.9
+    },
+    {
+      "date": "2025-12-07",
+      "title": "Recanto da Lagoa",
+      "amount": 3.0
+    },
+    {
+      "date": "2025-12-08",
+      "title": "Mp *Xbeleza",
+      "amount": 44.0
+    },
+    {
+      "date": "2025-12-08",
+      "title": "Padaria e Confeitaria",
+      "amount": 14.84
+    },
+    {
+      "date": "2025-12-08",
+      "title": "Saldo em atraso",
+      "amount": 3627.19
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Elianeramos",
+      "amount": 8.0
+    },
+    {
+      "date": "2025-12-09",
+      "title": "IOF de atraso",
+      "amount": 14.13
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Juros de dívida encerrada",
+      "amount": 86.96
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Multa de atraso",
+      "amount": 72.82
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Posto Milhas",
+      "amount": 69.0
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Posto Milhas",
+      "amount": 309.06
+    },
+    {
+      "date": "2025-12-09",
+      "title": "Prime Fit Academia - Parcela 1/12",
+      "amount": 38.24
+    },
+    {
+      "date": "2025-12-10",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-12-10",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 46.63
+    },
+    {
+      "date": "2025-12-10",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-12-10",
+      "title": "Uber Uber *Trip Help.U",
+      "amount": 8.92
+    },
+    {
+      "date": "2025-12-11",
+      "title": "Carlos Henrique R de S",
+      "amount": 71.8
+    },
+    {
+      "date": "2025-12-11",
+      "title": "Supermerc Gomes",
+      "amount": 71.57
+    },
+    {
+      "date": "2025-12-12",
+      "title": "Google Youtube",
+      "amount": 53.9
+    },
+    {
+      "date": "2025-12-12",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 40.99
+    },
+    {
+      "date": "2025-12-15",
+      "title": "Supermerc Gomes",
+      "amount": 31.22
+    },
+    {
+      "date": "2025-12-16",
+      "title": "Carlos Henrique R de S",
+      "amount": 24.0
+    },
+    {
+      "date": "2025-12-16",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 63.39
+    },
+    {
+      "date": "2025-12-16",
+      "title": "Minhocaburger",
+      "amount": 247.0
+    },
+    {
+      "date": "2025-12-16",
+      "title": "Rancho",
+      "amount": 36.4
+    },
+    {
+      "date": "2025-12-17",
+      "title": "Mercado Santo Antonio",
+      "amount": 45.26
+    },
+    {
+      "date": "2025-12-18",
+      "title": "Uber Uber *Trip Help.U",
+      "amount": 11.91
+    },
+    {
+      "date": "2025-12-19",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 40.61
+    },
+    {
+      "date": "2025-12-20",
+      "title": "63 24 793 Rafael Alten",
+      "amount": 7.9
+    },
+    {
+      "date": "2025-12-20",
+      "title": "Barbeiro",
+      "amount": 35.0
+    },
+    {
+      "date": "2025-12-20",
+      "title": "Disom",
+      "amount": 38.9
+    },
+    {
+      "date": "2025-12-20",
+      "title": "Lp Recargas",
+      "amount": 45.59
+    },
+    {
+      "date": "2025-12-20",
+      "title": "M.P. Coelho Tintas L - Parcela 1/4",
+      "amount": 53.09
+    },
+    {
+      "date": "2025-12-20",
+      "title": "Mercado Santo Antonio",
+      "amount": 17.96
+    },
+    {
+      "date": "2025-12-20",
+      "title": "Mercearia Serrana",
+      "amount": 23.9
+    },
+    {
+      "date": "2025-12-20",
+      "title": "Rancho",
+      "amount": 57.75
+    },
+    {
+      "date": "2025-12-20",
+      "title": "Supermerc Gomes",
+      "amount": 93.51
+    },
+    {
+      "date": "2025-12-23",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-12-24",
+      "title": "Carlos Henrique R de S",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-12-24",
+      "title": "Macrobala Distribuidor",
+      "amount": 50.41
+    },
+    {
+      "date": "2025-12-24",
+      "title": "Supermerc Gomes",
+      "amount": 119.99
+    },
+    {
+      "date": "2025-12-25",
+      "title": "Mercado Santo Antonio",
+      "amount": 22.94
+    },
+    {
+      "date": "2025-12-25",
+      "title": "Posto Marco Zero",
+      "amount": 119.8
+    },
+    {
+      "date": "2025-12-27",
+      "title": "Hortifruti Bom Gosto L",
+      "amount": 76.72
+    },
+    {
+      "date": "2025-12-27",
+      "title": "Mercado Santo Antonio",
+      "amount": 57.85
+    },
+    {
+      "date": "2025-12-27",
+      "title": "Mercado Uniao Zeroum",
+      "amount": 11.05
+    },
+    {
+      "date": "2025-12-27",
+      "title": "Ricky Lanches",
+      "amount": 36.0
+    },
+    {
+      "date": "2025-12-28",
+      "title": "Google One",
+      "amount": 49.99
+    },
+    {
+      "date": "2025-12-29",
+      "title": "Supermerc Gomes",
+      "amount": 45.96
+    },
+    {
+      "date": "2026-01-05",
+      "title": "Amazonmktplc*Brasilvip - Parcela 2/2",
+      "amount": 49.42
+    },
+    {
+      "date": "2026-01-08",
+      "title": "Prime Fit Academia - Parcela 2/12",
+      "amount": 38.24
+    },
+    {
+      "date": "2026-01-20",
+      "title": "M.P. Coelho Tintas L - Parcela 2/4",
+      "amount": 53.07
+    }
+  ]
+}

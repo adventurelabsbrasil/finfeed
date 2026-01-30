@@ -1,13 +1,61 @@
-crie um app simples para mobile onde possa ser feito o upload semanal de um arquivo csv da fatura de cartao de credito do nubank
-o app precisa ler os dados e categorizar
-ele deve criar graficos de custo por categoria e por entidade
-ele deve mostrar top5 despesas
-deve ter tabela dinamica para visualizar
-deve ter filtros de periodos
+# Finfeed — App de controle de fatura do cartão Nubank
 
-ele deve ter acesso a login via usuario e senha
-pensei em colocar ele no supabase ou firebase, vc me guia nisso
+## Objetivo
+App simples (mobile-first) para upload de CSV da fatura de cartão de crédito Nubank, com leitura, categorização e visualização consolidada.
 
-será feito o deploy dele em vercel, entao tem que ter um arquivo do cursor ja programado para revisar antes de commmitar
+## Funcionalidades
 
-na passa assets eu coloquei alguns csv ja para ter como base inicial tanto de colunas quanto de graficos a serem feitos
+### Upload de dados
+- Upload semanal de um arquivo CSV da fatura (fluxo principal).
+- **Importação inicial / bulk**: possibilidade de subir vários CSVs de uma vez (ex.: os da pasta `assets/`) para popular os últimos 12 meses de despesas e ter a consolidação desde o primeiro uso.
+- Formato do CSV: colunas `date`, `title`, `amount` (Nubank padrão). Valores positivos = despesa, negativos = pagamento recebido.
+
+### Processamento
+- Ler os dados e categorizar (por título/estabelecimento ou regras configuráveis).
+- Ignorar ou tratar à parte "Pagamento recebido" e outros créditos (amount < 0) para não entrarem como despesa nos gráficos/tabelas.
+
+### Visualizações
+- Gráficos de custo **por categoria** e **por entidade** (estabelecimento).
+- **Top 5 despesas** (maiores valores ou por frequência, configurável).
+- **Tabela dinâmica** para visualizar e filtrar os lançamentos.
+- **Filtros de período** (ex.: últimos 7 dias, 30 dias, 90 dias, 12 meses, intervalo customizado).
+
+### Consolidação dos últimos 12 meses
+- Manter no backend (Supabase/Firebase) o histórico de lançamentos de pelo menos os **últimos 12 meses**.
+- Dashboards e relatórios devem permitir filtrar por "últimos 12 meses" e exibir totais, médias e comparativos nesse período.
+- A importação bulk dos CSVs em `assets/` serve como base para ter essa consolidação já no primeiro uso.
+
+### Autenticação
+- Login via usuário e senha.
+- Dados isolados por usuário.
+
+## Backend / Deploy
+- **Backend**: Supabase ou Firebase — você me guia na escolha (auth + armazenamento dos lançamentos).
+- **Deploy**: Vercel. Manter um arquivo de regras do Cursor configurado para revisar o projeto antes de commitar/deploy.
+
+## Assets e dados iniciais
+- Na pasta `assets/` há CSVs de exemplo (Nubank_YYYY-MM-DD.csv) com o formato das colunas e dados para:
+  - Validar parsing e categorização.
+  - Servir de base para gráficos e tabelas.
+  - Fazer a **importação inicial** e montar a consolidação dos últimos 12 meses de despesas no app.
+
+### Como subir os dados dos CSVs (consolidação 12 meses)
+1. **Script de consolidação**  
+   Rodar `python3 scripts/consolidate_csv.py`. O script:
+   - Lê todos os `Nubank_*.csv` em `assets/`
+   - Considera só despesas (`amount` > 0); ignora pagamentos/créditos
+   - Filtra os últimos 12 meses a partir da data mais recente nos arquivos
+   - Remove duplicatas por (date, title, amount)
+   - Gera:
+     - `assets/consolidated_12m.json` — estrutura pronta para seed no backend (Supabase/Firebase) ou para ingest via API
+     - `assets/consolidated_12m_expenses.csv` — despesas consolidadas para inspeção
+
+2. **Uso no app**  
+   - **Importação inicial**: ler `consolidated_12m.json` (ou o CSV) e inserir os lançamentos no backend; ou oferecer na UI um "Importar CSVs em lote" que aceite múltiplos arquivos e repita a mesma lógica.
+   - **Upload semanal**: continuar com upload de um CSV por vez; o backend acumula o histórico e mantém a janela dos últimos 12 meses (ou mais).
+
+## Resumo técnico
+- CSV: `date`, `title`, `amount`.
+- Suportar upload único (semanal) e upload em lote (importação inicial).
+- Persistir lançamentos no backend; calcular agregados (por categoria, entidade, período) a partir deles.
+- Últimos 12 meses: período mínimo mantido em dados; filtros e dashboards devem oferecer essa janela.
